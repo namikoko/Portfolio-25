@@ -1,0 +1,180 @@
+/* ===== OMNI CASE STUDY - GREEN ACCENT STYLES ===== */
+/* Green accent color: #00FF9D */
+
+:root {
+    --omni-green: #00FF9D;
+    --omni-green-light: rgba(0, 255, 157, 0.15);
+    --omni-green-glow: rgba(0, 255, 157, 0.4);
+}
+
+/* Section Numbers - Green */
+.section-number {
+    color: var(--omni-green) !important;
+    text-shadow: 0 0 30px var(--omni-green-glow);
+}
+
+/* Progress Bar - Green */
+.progress-bar {
+    background: linear-gradient(90deg, var(--omni-green), rgba(0, 255, 157, 0.6)) !important;
+    box-shadow: 0 0 10px var(--omni-green-glow) !important;
+}
+
+/* Hero Background Text Gradient */
+.hero-background-text {
+    background: linear-gradient(180deg, rgba(0, 255, 157, 0.08) 0%, transparent 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* ===== Green Accent Overrides ===== */
+
+/* Problem Pills */
+.problem-pill {
+    color: var(--omni-green);
+    border-color: rgba(0, 255, 157, 0.3);
+    background: var(--omni-green-light);
+}
+
+/* Responsibility Card Icons */
+.card-icon {
+    color: var(--omni-green);
+    background: var(--omni-green-light);
+    border-color: rgba(0, 255, 157, 0.2);
+}
+
+/* Responsibility Card Hover */
+.responsibility-card:hover {
+    border-color: rgba(0, 255, 157, 0.3);
+}
+
+/* Research Stats */
+.stat-percentage {
+    color: var(--omni-green);
+    text-shadow: 0 0 40px var(--omni-green-glow);
+}
+
+/* Metric Icons */
+.metric-icon {
+    color: var(--omni-green);
+    background: var(--omni-green-light);
+}
+
+/* Metric Row Hover */
+.metric-row:hover {
+    border-color: rgba(0, 255, 157, 0.3);
+}
+
+.metric-row:hover .metric-icon {
+    background: rgba(0, 255, 157, 0.2);
+}
+
+/* Strategy Card Icons */
+.strategy-icon {
+    color: var(--omni-green);
+    background: var(--omni-green-light);
+}
+
+/* Strategy Pills */
+.strategy-pill {
+    border-color: rgba(0, 255, 157, 0.3);
+}
+
+.pill-label {
+    color: var(--omni-green);
+}
+
+/* Strategy Card Hover */
+.strategy-card:hover {
+    border-color: rgba(0, 255, 157, 0.3);
+}
+
+/* Timeline Node Icons */
+.node-icon {
+    color: var(--omni-green);
+    border-color: rgba(0, 255, 157, 0.5);
+    box-shadow: 0 0 20px var(--omni-green-glow);
+}
+
+/* Timeline Line */
+.timeline-nodes::before {
+    background: var(--omni-green);
+}
+
+/* Impact Bubbles */
+.bubble {
+    border-color: rgba(0, 255, 157, 0.4);
+}
+
+.bubble-label {
+    color: var(--omni-green);
+}
+
+/* Outcome Items */
+.outcome-num {
+    color: var(--omni-green);
+}
+
+.outcome-keyword {
+    color: var(--omni-green);
+}
+
+.outcome-item:hover {
+    border-color: rgba(0, 255, 157, 0.3);
+}
+
+/* Reflection Labels */
+.reflection-label {
+    color: var(--omni-green);
+}
+
+/* Reflection Blocks Hover */
+.reflection-block:hover {
+    border-color: rgba(0, 255, 157, 0.3);
+}
+
+/* Section Footer Emphasis */
+.section-footer em {
+    color: var(--omni-green);
+}
+
+/* Research Footer */
+.research-footer {
+    border-color: rgba(0, 255, 157, 0.2);
+}
+
+/* Closing em text */
+.reflection-closing em {
+    color: var(--omni-green);
+}
+
+/* Overview Grid Labels */
+.overview-label {
+    color: var(--omni-green);
+}
+
+/* Footer Link Hover - White for Omni */
+.case-footer .footer-link {
+    position: relative;
+}
+
+.case-footer .footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 255, 157, 0.3);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.case-footer .footer-link:hover {
+    color: #fff !important;
+}
+
+.case-footer .footer-link:hover::after {
+    transform: scaleX(1);
+    background: var(--omni-green);
+}

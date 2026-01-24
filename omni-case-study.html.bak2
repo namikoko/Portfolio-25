@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMNI – Case Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="case-study.css">
+    <link rel="preload" href="Assets/fonts/NeutralFace.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="case-nav">
+        <a href="index.html" class="case-nav-logo">← back</a>
+        <div class="case-nav-progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="case-hero">
+        <!-- Background Text -->
+        <h1 class="hero-background-text">OMNI</h1>
+        
+        <!-- Metadata -->
+        <div class="hero-metadata hero-metadata-top-left">Group Benefits & Retirement Platform</div>
+        <div class="hero-metadata hero-metadata-top-right">2023-2024</div>
+        <div class="hero-metadata hero-metadata-bottom-left">Strategic Product Initiative</div>
+        <div class="hero-metadata hero-metadata-bottom-right">Case Study</div>
+        
+        <!-- Phone Mockup (centered) -->
+        <div class="hero-center">
+            <img src="Assets/Photos/omniscreen.svg" alt="Omni App Interface" class="phone-mockup">
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <div class="case-content-wrapper">
+        <!-- Section 01 -->
+        <section class="case-section" id="section-01">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Executive Summary</h2>
+            </div>
+            <div class="section-content">
+                <div class="summary-cards-grid">
+                    <div class="summary-card card-problem">
+                        <div class="card-number">01</div>
+                        <h3 class="card-title">Problem</h3>
+                        <p class="card-text"><strong class="card-emphasis">Omni's experience was fragmented across multiple portals, apps, and PDFs.</strong> Users had to jump between insurance, retirement, claims, and deposits across disconnected systems.</p>
+                    </div>
+                    <div class="summary-card card-strategy">
+                        <div class="card-number">02</div>
+                        <h3 class="card-title">Strategy</h3>
+                        <p class="card-text"><strong class="card-emphasis">I led the consolidation of all experiences into a unified mobile platform</strong> spanning research, IA, workflow redesign, accessibility, and core component development.</p>
+                    </div>
+                    <div class="summary-card card-outcome">
+                        <div class="card-number">03</div>
+                        <h3 class="card-title">Outcome</h3>
+                        <p class="card-text"><strong class="card-emphasis">A unified benefits hub that reduced friction across claims, coverage, and retirement</strong> — modernizing the product and enabling scalable future features.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 02: The Problem -->
+        <section class="problem-section" id="section-02">
+            <div class="problem-header">
+                <div class="problem-header-index">02</div>
+                <h2 class="problem-header-title">THE PROBLEM</h2>
+                <p class="problem-description">Consolidating a fragmented experience spanning five disconnected systems.</p>
+            </div>
+
+            <div class="problem-columns">
+                <!-- Column 1: Fragmented Systems -->
+                <div class="problem-column">
+                    <div class="column-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <rect x="3" y="3" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <rect x="14" y="3" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <rect x="3" y="14" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <rect x="14" y="14" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="column-title">Fragmented Systems</h3>
+                    <div class="column-pills">
+                        <div class="pill">Retirement App</div>
+                        <div class="pill">Insurance App</div>
+                        <div class="pill">PDF Cards</div>
+                        <div class="pill">Claims Portal</div>
+                        <div class="pill">Email Threads</div>
+                    </div>
+                </div>
+
+                <!-- Column Divider -->
+                <div class="column-divider"></div>
+
+                <!-- Column 2: User & Provider Pain -->
+                <div class="problem-column">
+                    <div class="column-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="column-title">User & Provider Pain</h3>
+                    <div class="column-pills">
+                        <div class="pill">Support Tickets</div>
+                        <div class="pill">Slow Reimbursements</div>
+                        <div class="pill">Low Trust</div>
+                        <div class="pill">User Friction</div>
+                    </div>
+                </div>
+
+                <!-- Column Divider -->
+                <div class="column-divider"></div>
+
+                <!-- Column 3: Business Challenge -->
+                <div class="problem-column">
+                    <div class="column-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-13c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="column-title">Business Challenge</h3>
+                    <div class="column-pills">
+                        <div class="pill">Unify Ecosystem</div>
+                        <div class="pill">Protect Legacy Infra</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 03: My Responsibilities -->
+        <section class="responsibilities-section" id="section-03">
+            <div class="responsibilities-header">
+                <div class="responsibilities-header-index">03</div>
+                <h2 class="responsibilities-header-title">MY<br>RESPONSIBILITIES</h2>
+                <p class="responsibilities-description">Four core areas of design and development ownership</p>
+            </div>
+
+            <div class="responsibilities-grid">
+                <!-- Card 1: Research & Strategy -->
+                <div class="responsibility-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="30" height="30">
+                            <circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="m14 14 6 6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Research & Strategy</h3>
+                    <ul class="card-description">
+                        <li>UX research</li>
+                        <li>Information architecture</li>
+                        <li>Workflow analysis</li>
+                        <li>Systems consolidation</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Features & Flow -->
+                <div class="responsibility-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="30" height="30">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Features & Flow</h3>
+                    <ul class="card-description">
+                        <li>Claims workflow redesign</li>
+                        <li>Apple Wallet integration</li>
+                        <li>Telemedicine flows</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Design & Systems -->
+                <div class="responsibility-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="30" height="30">
+                            <rect x="3" y="3" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <rect x="13" y="3" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <rect x="3" y="13" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <rect x="13" y="13" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Design & Systems</h3>
+                    <ul class="card-description">
+                        <li>Interaction design</li>
+                        <li>UI design</li>
+                        <li>Unified design system</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4: Implementation -->
+                <div class="responsibility-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="30" height="30">
+                            <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Implementation</h3>
+                    <ul class="card-description">
+                        <li>Accessibility improvements</li>
+                        <li>Biometric integration</li>
+                        <li>Front-end components</li>
+                    </ul>
+                </div>
+
+                <p class="responsibilities-closing">This wasn't about optimizing one stage—it was designing a closed-loop experience that compounds value across all four phases.</p>
+            </div>
+        </section>
+
+        <!-- Section 04: Research Insights -->
+        <section class="research-insights-section" id="section-04">
+            <div class="research-header">
+                <div class="research-header-index">04</div>
+                <h2 class="research-header-title">RESEARCH INSIGHTS</h2>
+                <p class="research-header-subtitle">From app store reviews, interviews, and support logs, four key issues emerged.</p>
+            </div>
+
+            <div class="insights-dashboard">
+                <!-- Left Column: Data Visualizations -->
+                <div class="dashboard-left">
+                    <!-- Stat Block 1: Users Couldn't Find Info -->
+                    <div class="stat-block stat-block-large">
+                        <div class="stat-percentage">71%</div>
+                        <p class="stat-subtitle">of users struggled to find basic coverage information.</p>
+                        <p class="stat-body">Coverage info was buried in PDFs or external portals, causing frustration and unnecessary support calls.</p>
+                        <div class="stat-icons">
+                            <div class="icon-person filled"></div>
+                            <div class="icon-person filled"></div>
+                            <div class="icon-person filled"></div>
+                            <div class="icon-person filled"></div>
+                            <div class="icon-person filled"></div>
+                            <div class="icon-person filled"></div>
+                            <div class="icon-person filled"></div>
+                            <div class="icon-person empty"></div>
+                            <div class="icon-person empty"></div>
+                            <div class="icon-person empty"></div>
+                        </div>
+                    </div>
+
+                    <!-- Row with pie chart and percentage -->
+                    <div class="stat-row">
+                        <!-- Stat Block 2: Recommendation -->
+                        <div class="stat-block stat-block-pie">
+                            <div class="pie-label">78%</div>
+                            <p class="stat-subtitle">would recommend the platform if basic info were easier to find.</p>
+                            <p class="stat-body">Users said simple access to cards, coverage, and claims would dramatically improve satisfaction.</p>
+                            <svg class="progress-graphic" viewBox="0 0 160 160" width="160" height="160">
+                                <defs>
+                                    <linearGradient id="progressGrad78" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00FF9D;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#00FF9D;stop-opacity:0.7" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Background outer ring -->
+                                <circle cx="80" cy="80" r="60" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="3"/>
+                                <!-- Progress arc (78% = 280.8 degrees) -->
+                                <circle cx="80" cy="80" r="60" fill="none" stroke="url(#progressGrad78)" stroke-width="3" stroke-dasharray="292.2 377" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90 80 80)"/>
+                                <!-- Inner circle background -->
+                                <circle cx="80" cy="80" r="35" fill="rgba(0,255,157,0.08)" stroke="rgba(0,255,157,0.25)" stroke-width="1.5"/>
+                                <!-- Thumbs up icon -->
+                                <g transform="translate(80, 80)">
+                                    <path d="M -8 0 L -8 15 L 5 15 L 5 8 L 8 8 L 8 -2 Q 8 -8 2 -8 L -5 -8 Q -8 -8 -8 -5" stroke="#00FF9D" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <!-- Stat Block 3: Trust Improvement -->
+                        <div class="stat-block stat-block-revenue">
+                            <div class="stat-percentage">40%</div>
+                            <p class="stat-subtitle">increase in trust when workflows were simplified.</p>
+                            <p class="stat-body">Clear navigation, reduced paperwork, and integrated tools boosted user confidence significantly.</p>
+                            <svg class="progress-graphic" viewBox="0 0 160 160" width="160" height="160">
+                                <defs>
+                                    <linearGradient id="progressGrad40" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00FF9D;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#00FF9D;stop-opacity:0.7" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Background outer ring -->
+                                <circle cx="80" cy="80" r="60" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="3"/>
+                                <!-- Progress arc (40% = 144 degrees) -->
+                                <circle cx="80" cy="80" r="60" fill="none" stroke="url(#progressGrad40)" stroke-width="3" stroke-dasharray="150.8 377" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90 80 80)"/>
+                                <!-- Inner circle background -->
+                                <circle cx="80" cy="80" r="35" fill="rgba(0,255,157,0.08)" stroke="rgba(0,255,157,0.25)" stroke-width="1.5"/>
+                                <!-- Checkmark -->
+                                <path d="M 70 80 L 76 86 L 92 70" stroke="#00FF9D" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Metrics List -->
+                <div class="dashboard-right">
+                    <!-- Metric Row 1: Access to Basics -->
+                    <div class="metric-row">
+                        <div class="metric-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <circle cx="11" cy="11" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="metric-text">
+                            <span class="metric-label">Access to Basics</span>
+                            <span class="metric-sublabel">Coverage info too hard to find</span>
+                        </div>
+                    </div>
+
+                    <!-- Metric Row 2: Claims Complexity -->
+                    <div class="metric-row">
+                        <div class="metric-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                                <polyline points="13 2 13 9 20 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="metric-text">
+                            <span class="metric-label">Claims Complexity</span>
+                            <span class="metric-sublabel">Paper-heavy, error-prone flows</span>
+                        </div>
+                    </div>
+
+                    <!-- Metric Row 3: Fragmented Ecosystem -->
+                    <div class="metric-row">
+                        <div class="metric-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <circle cx="6" cy="6" r="2" fill="currentColor"/>
+                                <circle cx="18" cy="6" r="2" fill="currentColor"/>
+                                <circle cx="12" cy="16" r="2" fill="currentColor"/>
+                                <path d="M8 8l4 4m0 0l4-4M12 10v4M8 12l4-4m4 0l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="metric-text">
+                            <span class="metric-label">Fragmented Ecosystem</span>
+                            <span class="metric-sublabel">Journeys split across tools</span>
+                        </div>
+                    </div>
+
+                    <!-- Metric Row 4: Missing Essentials -->
+                    <div class="metric-row">
+                        <div class="metric-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="metric-text">
+                            <span class="metric-label">Missing Essentials</span>
+                            <span class="metric-sublabel">Experience felt outdated</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 05: Product Strategy -->
+        <section class="case-section" id="section-05">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Product Strategy</h2>
+            </div>
+            <div class="section-content">
+                <p class="section-lead">We reframed the work from "add missing features" to "reduce friction across the benefits lifecycle."</p>
+                
+                <div class="strategy-grid">
+                    <div class="strategy-card">
+                        <h3>Integrated Benefits Hub</h3>
+                        <p>One app for retirement, insurance, claims, benefit cards, and telemedicine.</p>
+                        <p class="strategy-goal"><strong>Goal:</strong> Eliminate fragmentation</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h3>Digital Benefit Cards + Apple Wallet</h3>
+                        <p>Instant access during medical visits.</p>
+                        <p class="strategy-goal"><strong>Impact:</strong> Resolved top support ticket category</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h3>Paperless Claims System</h3>
+                        <p>Submit → track → review, all in-app. No PDFs. No resubmissions.</p>
+                        <p class="strategy-goal"><strong>Impact:</strong> Faster processing</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h3>Direct Deposit Setup</h3>
+                        <p>Self-serve configuration. Faster reimbursements.</p>
+                        <p class="strategy-goal"><strong>Impact:</strong> Eliminated manual admin work</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h3>Enhanced Security</h3>
+                        <p>Biometrics (Face ID / Touch ID), encrypted storage, role-based access.</p>
+                        <p class="strategy-goal"><strong>Impact:</strong> Bank-grade security</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 06: Key Design Decisions -->
+        <section class="case-section" id="section-06">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Key Design Decisions</h2>
+            </div>
+            <div class="section-content">
+                <div class="design-grid">
+                    <div class="design-card">
+                        <h3>Consolidated IA</h3>
+                        <p>Merged retirement and insurance into one clear model.</p>
+                        <p class="design-result"><strong>Result:</strong> Unified mental model for all benefits</p>
+                    </div>
+                    <div class="design-card">
+                        <h3>Claims Redesign</h3>
+                        <p>3-step guided flow: Upload → Classify → Review & Submit</p>
+                        <p class="design-result"><strong>Result:</strong> Reduced errors and processing time</p>
+                    </div>
+                    <div class="design-card">
+                        <h3>Apple Wallet Integration</h3>
+                        <p>Digital card system with tap-to-show coverage.</p>
+                        <p class="design-result"><strong>Result:</strong> Resolved top user complaint</p>
+                    </div>
+                    <div class="design-card">
+                        <h3>Unified UI System</h3>
+                        <p>Modular components, accessible colors, consistent spacing.</p>
+                        <p class="design-result"><strong>Result:</strong> Coherent experience across modules</p>
+                    </div>
+                    <div class="design-card">
+                        <h3>Accessibility & Biometrics</h3>
+                        <p>High-contrast modes, larger touch targets, voiceover support.</p>
+                        <p class="design-result"><strong>Result:</strong> Inclusive for all user groups</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 07: Impact -->
+        <section class="case-section" id="section-07">
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2 class="section-title">Impact</h2>
+            </div>
+            <div class="section-content">
+                <p class="section-lead">Measured through pilot testing and support log trends:</p>
+                
+                <div class="impact-cards">
+                    <div class="impact-card">
+                        <div class="impact-stat">40%</div>
+                        <p>Reduction in support requests for lost/inaccessible benefit cards</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-stat">25–35%</div>
+                        <p>Fewer claim resubmissions (simplified flow)</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-stat">↑</div>
+                        <p>Faster reimbursements through direct deposit</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-stat">↑</div>
+                        <p>Improved trust among older users</p>
+                    </div>
+                </div>
+
+                <p class="section-text" style="margin-top: 2rem;">The new Omni app delivered a unified, modern, secure experience where key tasks were accessible in seconds—not across five separate channels.</p>
+            </div>
+        </section>
+
+        <!-- Section 08 -->
+        <section class="case-section" id="section-08">
+            <div class="section-header">
+                <span class="section-number">08</span>
+                <h2 class="section-title">Final Outcome</h2>
+            </div>
+            <div class="section-content">
+                <p class="section-lead">The redesigned Omni platform:</p>
+                
+                <ul class="outcome-list">
+                    <li>Centralizes retirement and insurance into one hub</li>
+                    <li>Provides instant access to digital benefit cards (including Apple Wallet)</li>
+                    <li>Streamlines claims with a fully paperless workflow</li>
+                    <li>Supports telemedicine directly in-app</li>
+                    <li>Secures all sensitive information through biometrics</li>
+                    <li>Establishes a scalable foundation for future enhancements</li>
+                </ul>
+
+                <p class="section-text"><strong>This was a structural transformation of the benefits ecosystem, not merely a visual update.</strong></p>
+            </div>
+        </section>
+
+        <!-- Section 09 -->
+        <section class="case-section" id="section-09">
+            <div class="section-header">
+                <span class="section-number">09</span>
+                <h2 class="section-title">Reflection</h2>
+            </div>
+            <div class="section-content">
+                <p class="section-lead">What this project taught me about designing complex systems</p>
+                
+                <p class="section-text">Healthcare and retirement systems fail not because of missing features, but because of poor sense-making. When employees feel confused, anxious, or overwhelmed, they disconnect—not from lack of trying, but from cognitive overload. My work on Omni was fundamentally about reducing that burden through clarity, transparency, and human-centered simplicity.</p>
+
+                <p class="section-text">What surprised me most was how much impact design could have in this space. Small changes—using plain language instead of jargon, exposing critical information instead of burying it, showing progress instead of forcing users to guess—created outsized improvements in user confidence and action.</p>
+
+                <p class="section-text">This taught me that enterprise design isn't about making things prettier; it's about respecting user intelligence and emotional wellbeing.</p>
+
+                <p class="section-conclusion">Omni demonstrates that thoughtful, evidence-based design can transform something universally dreaded—benefits administration—into something transparent, modern, and genuinely empowering. The goal of any complex system should be to become invisible; Omni moved us toward that vision.</p>
+            </div>
+        </section>
+
+        <!-- Section 10: Removed -->
+        <!-- Section 11 Becomes Section 10 -->
+        <section class="case-section" id="section-10">
+            <div class="section-header">
+                <span class="section-number">10</span>
+                <h2 class="section-title">Ready for the next project?</h2>
+            </div>
+            <div class="section-content">
+                <a href="index.html" class="cta-link">← Back to portfolio</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer CTA -->
+    <section class="case-footer">
+        <div class="footer-content">
+            <h2>Ready for the next project?</h2>
+            <a href="index.html" class="footer-link">← Back to portfolio</a>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll progress bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            const progressBar = document.getElementById('progressBar');
+            if (progressBar) {
+                progressBar.style.width = scrollPercent + '%';
+            }
+        });
+
+        // Animated number counters
+        function animateCountUp(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            let current = 0;
+            const increment = target / 40;
+            
+            const interval = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.innerText = target + '%';
+                    clearInterval(interval);
+                } else {
+                    element.innerText = Math.floor(current) + '%';
+                }
+            }, 50);
+        }
+
+        // Fade-up animation on scroll
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -80px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    
+                    // Trigger number animations for count-up elements
+                    const countUps = entry.target.querySelectorAll('.count-up');
+                    countUps.forEach(el => {
+                        if (!el.classList.contains('animated')) {
+                            animateCountUp(el);
+                            el.classList.add('animated');
+                        }
+                    });
+                    
+                    // Trigger number animations for impact numbers
+                    const impactNumbers = entry.target.querySelectorAll('.impact-number');
+                    impactNumbers.forEach(el => {
+                        if (!el.classList.contains('animated')) {
+                            animateCountUp(el);
+                            el.classList.add('animated');
+                        }
+                    });
+                    
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections and cards
+        document.querySelectorAll('.case-section, .stat-card, .challenge-item, .insight-card, .principle-card, .outcome-card, .solution-item, .tradeoff-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
