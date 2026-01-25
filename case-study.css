@@ -306,13 +306,13 @@ body.page-exit {
 }
 
 .animate-fade-up {
-    animation: fadeUpIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    animation: fadeUpIn 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
     opacity: 0;
 }
 
 .case-section {
     opacity: 0;
-    animation: fadeUpIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    animation: fadeUpIn 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
 .case-section.in-view {
@@ -326,7 +326,7 @@ body.page-exit {
     gap: 60px;
     padding: 100px 0;
     border-bottom: 1px solid #1a1a1a;
-    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .section-header {
@@ -2623,8 +2623,8 @@ body.page-exit {
     padding: 28px 20px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    animation: fadeUpIn 0.6s ease-out forwards;
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation: fadeUpIn 0.25s ease-out forwards;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2634,10 +2634,10 @@ body.page-exit {
 }
 
 .strategy-card:nth-child(1) { animation-delay: 0s; }
-.strategy-card:nth-child(2) { animation-delay: 0.08s; }
-.strategy-card:nth-child(3) { animation-delay: 0.16s; }
-.strategy-card:nth-child(4) { animation-delay: 0.24s; }
-.strategy-card:nth-child(5) { animation-delay: 0.32s; }
+.strategy-card:nth-child(2) { animation-delay: 0.02s; }
+.strategy-card:nth-child(3) { animation-delay: 0.04s; }
+.strategy-card:nth-child(4) { animation-delay: 0.06s; }
+.strategy-card:nth-child(5) { animation-delay: 0.08s; }
 
 .strategy-card:hover {
     background: rgba(255, 255, 255, 0.06);
@@ -2774,15 +2774,15 @@ body.page-exit {
     padding: 20px;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    animation: fadeUpIn 0.6s ease-out forwards;
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation: fadeUpIn 0.25s ease-out forwards;
 }
 
 .design-card:nth-child(1) { animation-delay: 0s; }
-.design-card:nth-child(2) { animation-delay: 0.08s; }
-.design-card:nth-child(3) { animation-delay: 0.16s; }
-.design-card:nth-child(4) { animation-delay: 0.24s; }
-.design-card:nth-child(5) { animation-delay: 0.32s; }
+.design-card:nth-child(2) { animation-delay: 0.02s; }
+.design-card:nth-child(3) { animation-delay: 0.04s; }
+.design-card:nth-child(4) { animation-delay: 0.06s; }
+.design-card:nth-child(5) { animation-delay: 0.08s; }
 
 .design-card:hover {
     background: rgba(255, 255, 255, 0.08);
@@ -3107,6 +3107,20 @@ body.page-exit {
     font-style: normal;
     color: #00FFAA;
     font-weight: 600;
+}
+
+/* Evident Section 07 interface image */
+.interface-showcase {
+    margin-top: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.interface-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Responsive */
@@ -4374,3 +4388,461 @@ body.page-exit {
         max-width: 200px;
     }
 }
+
+/* ===== FAST DYNAMIC ANIMATIONS - Framer/Webflow Style ===== */
+
+/* ========================================
+   TEXT - FAST, CRISP, NO BLUR
+   ======================================== */
+
+.section-header h2,
+.section-header .section-title {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.2s ease-out, transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.section-header.visible h2,
+.section-header.visible .section-title {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-header .section-number {
+    opacity: 0;
+    transform: scale(0.7) translateY(15px);
+    transition: opacity 0.18s ease-out, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.section-header.visible .section-number {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+/* ========================================
+   CARDS - FAST 3D ENTRANCE
+   ======================================== */
+
+.summary-card {
+    opacity: 0;
+    transform: translateY(40px) rotateX(12deg);
+    transform-style: preserve-3d;
+    transition: opacity 0.2s ease-out, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.summary-card.visible {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.responsibility-card {
+    opacity: 0;
+    transform: translateX(-30px) translateY(20px);
+    transition: opacity 0.18s ease-out, transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.responsibility-card:nth-child(even) {
+    transform: translateX(30px) translateY(20px);
+}
+
+.responsibility-card.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+.problem-column {
+    opacity: 0;
+    transform: translateY(35px) scale(0.97);
+    transition: opacity 0.18s ease-out, transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.problem-column.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* ========================================
+   IMAGES - FAST WIPE REVEALS
+   ======================================== */
+
+.case-image,
+.reveal-image {
+    opacity: 0;
+    clip-path: inset(100% 0 0 0);
+    transition: opacity 0.2s ease-out, clip-path 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.case-image.visible,
+.reveal-image.visible {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+}
+
+.reveal-image-left {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+    transition: opacity 0.2s ease-out, clip-path 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-image-left.visible {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+}
+
+.reveal-image-right {
+    opacity: 0;
+    clip-path: inset(0 0 0 100%);
+    transition: opacity 0.2s ease-out, clip-path 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-image-right.visible {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+}
+
+.reveal-image-center {
+    opacity: 0;
+    clip-path: inset(40% 40% 40% 40%);
+    transition: opacity 0.18s ease-out, clip-path 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-image-center.visible {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+}
+
+/* Diagonal wipe */
+.reveal-image-diagonal {
+    opacity: 0;
+    clip-path: polygon(0 100%, 0 100%, 0 100%);
+    transition: opacity 0.2s ease-out, clip-path 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-image-diagonal.visible {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Circle expand */
+.reveal-image-circle {
+    opacity: 0;
+    clip-path: circle(0% at 50% 50%);
+    transition: opacity 0.18s ease-out, clip-path 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-image-circle.visible {
+    opacity: 1;
+    clip-path: circle(75% at 50% 50%);
+}
+
+.browser-mockup,
+.mockup-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.2s ease-out, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.browser-mockup.visible,
+.mockup-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================
+   PILLS - FAST POP
+   ======================================== */
+
+.pill {
+    opacity: 0;
+    transform: scale(0.7) translateY(10px);
+    transition: opacity 0.12s ease-out, transform 0.16s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.column-pills.visible .pill,
+.visible .pill {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+/* ========================================
+   ICONS - FAST SPIN
+   ======================================== */
+
+.card-icon,
+.column-icon {
+    opacity: 0;
+    transform: scale(0.5) rotate(-45deg);
+    transition: opacity 0.14s ease-out, transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.responsibility-card.visible .card-icon,
+.problem-column.visible .column-icon {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+.card-icon.visible,
+.column-icon.visible {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+/* ========================================
+   REVEAL CLASSES - ALL FAST
+   ======================================== */
+
+.reveal-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.2s ease-out, transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-down {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.2s ease-out, transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-down.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.2s ease-out, transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.2s ease-out, transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.16s ease-out, transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-scale.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.reveal-pop {
+    opacity: 0;
+    transform: scale(0.6);
+    transition: opacity 0.12s ease-out, transform 0.16s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.reveal-pop.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.reveal-rotate {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.7);
+    transition: opacity 0.16s ease-out, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.reveal-rotate.visible {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.reveal-flip-x {
+    opacity: 0;
+    transform: perspective(800px) rotateX(-60deg);
+    transition: opacity 0.16s ease-out, transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-flip-x.visible {
+    opacity: 1;
+    transform: perspective(800px) rotateX(0deg);
+}
+
+.reveal-flip-y {
+    opacity: 0;
+    transform: perspective(800px) rotateY(-60deg);
+    transition: opacity 0.16s ease-out, transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-flip-y.visible {
+    opacity: 1;
+    transform: perspective(800px) rotateY(0deg);
+}
+
+/* Zoom out entrance */
+.reveal-zoom-out {
+    opacity: 0;
+    transform: scale(1.15);
+    transition: opacity 0.2s ease-out, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-zoom-out.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Skew entrance */
+.reveal-skew {
+    opacity: 0;
+    transform: skewY(5deg) translateY(25px);
+    transition: opacity 0.16s ease-out, transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-skew.visible {
+    opacity: 1;
+    transform: skewY(0deg) translateY(0);
+}
+
+/* ========================================
+   FAST STAGGER DELAYS
+   ======================================== */
+
+.stagger-children > *:nth-child(1) { transition-delay: 0ms; }
+.stagger-children > *:nth-child(2) { transition-delay: 40ms; }
+.stagger-children > *:nth-child(3) { transition-delay: 80ms; }
+.stagger-children > *:nth-child(4) { transition-delay: 120ms; }
+.stagger-children > *:nth-child(5) { transition-delay: 160ms; }
+.stagger-children > *:nth-child(6) { transition-delay: 200ms; }
+.stagger-children > *:nth-child(7) { transition-delay: 240ms; }
+.stagger-children > *:nth-child(8) { transition-delay: 280ms; }
+
+.summary-cards-grid .summary-card:nth-child(1) { transition-delay: 0ms; }
+.summary-cards-grid .summary-card:nth-child(2) { transition-delay: 60ms; }
+.summary-cards-grid .summary-card:nth-child(3) { transition-delay: 120ms; }
+.summary-cards-grid .summary-card:nth-child(4) { transition-delay: 180ms; }
+
+.responsibilities-grid .responsibility-card:nth-child(1) { transition-delay: 0ms; }
+.responsibilities-grid .responsibility-card:nth-child(2) { transition-delay: 50ms; }
+.responsibilities-grid .responsibility-card:nth-child(3) { transition-delay: 100ms; }
+.responsibilities-grid .responsibility-card:nth-child(4) { transition-delay: 150ms; }
+.responsibilities-grid .responsibility-card:nth-child(5) { transition-delay: 200ms; }
+.responsibilities-grid .responsibility-card:nth-child(6) { transition-delay: 250ms; }
+
+.problem-columns .problem-column:nth-child(1) { transition-delay: 0ms; }
+.problem-columns .problem-column:nth-child(2) { transition-delay: 70ms; }
+.problem-columns .problem-column:nth-child(3) { transition-delay: 140ms; }
+.problem-columns .problem-column:nth-child(4) { transition-delay: 210ms; }
+
+.column-pills .pill:nth-child(1) { transition-delay: 0ms; }
+.column-pills .pill:nth-child(2) { transition-delay: 30ms; }
+.column-pills .pill:nth-child(3) { transition-delay: 60ms; }
+.column-pills .pill:nth-child(4) { transition-delay: 90ms; }
+.column-pills .pill:nth-child(5) { transition-delay: 120ms; }
+.column-pills .pill:nth-child(6) { transition-delay: 150ms; }
+
+/* ========================================
+   HEADERS - FAST
+   ======================================== */
+
+.problem-header,
+.responsibilities-header {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.35s ease-out, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.problem-header.visible,
+.responsibilities-header.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================
+   SECTION - INSTANT TRIGGER
+   ======================================== */
+
+.case-section {
+    opacity: 1;
+    transform: none;
+}
+
+/* ========================================
+   LINE ANIMATIONS - FAST
+   ======================================== */
+
+.reveal-line {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-line.visible {
+    transform: scaleX(1);
+}
+
+.reveal-line-center {
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-line-center.visible {
+    transform: scaleX(1);
+}
+
+/* ========================================
+   FLOATING & CONTINUOUS
+   ======================================== */
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.9; }
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.float { animation: float 3s ease-in-out infinite; }
+.float-slow { animation: float 5s ease-in-out infinite; }
+.pulse { animation: pulse 2s ease-in-out infinite; }
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .reveal-up, .reveal-down, .reveal-left, .reveal-right, 
+    .reveal-scale, .reveal-pop, .reveal-rotate, .reveal-flip-x, .reveal-flip-y,
+    .reveal-zoom-out, .reveal-skew, .reveal-image, .reveal-image-left,
+    .reveal-image-right, .reveal-image-center, .reveal-image-diagonal, .reveal-image-circle,
+    .summary-card, .responsibility-card, .problem-column, .pill,
+    .section-header, .browser-mockup, .case-image, .card-icon, .column-icon {
+        opacity: 1 !important;
+        transform: none !important;
+        clip-path: none !important;
+    }
+}
+

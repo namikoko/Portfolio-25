@@ -402,7 +402,7 @@
                 
                 <!-- Interface Screenshot -->
                 <div class="interface-showcase">
-                    <img src="Assets/Photos/Evdt-cover.svg" alt="Evident Connect Interface Redesign" class="interface-image">
+                    <img src="Assets/Photos/Evdt-cover.svg" alt="Evident Connect Interface Redesign" class="interface-image case-image visible" data-reveal onerror="this.onerror=null;this.src='Assets/Photos/Evident cover.svg';">
                 </div>
                 
                 <p class="section-footer">The interface was rebuilt to feel focused, usable, and aligned with the urgency of NDT tasks.</p>
@@ -661,6 +661,138 @@
                 }, 520);
             });
         });
+    </script>
+
+    <!-- FAST DYNAMIC ANIMATIONS -->
+    <script>
+        (function() {
+            'use strict';
+            
+            // ========================================
+            // VARIED ANIMATION ASSIGNMENT
+            // ========================================
+            function assignAnimations() {
+                const imageReveals = ['reveal-image', 'reveal-image-left', 'reveal-image-right', 'reveal-image-center', 'reveal-image-diagonal', 'reveal-image-circle'];
+                document.querySelectorAll('.case-image, .case-section img:not(.card-icon):not(.column-icon)').forEach((img, i) => {
+                    if (!img.closest('.browser-mockup') && !img.closest('.phone-mockup')) {
+                        img.classList.add(imageReveals[i % imageReveals.length]);
+                    }
+                });
+                
+                const mockupReveals = ['reveal-up', 'reveal-scale', 'reveal-flip-x'];
+                document.querySelectorAll('.browser-mockup, .mockup-container').forEach((el, i) => {
+                    el.classList.add(mockupReveals[i % mockupReveals.length]);
+                });
+
+                document.querySelectorAll('.card-icon, .column-icon').forEach((el) => {
+                    el.classList.add('reveal-rotate');
+                });
+
+                const textNodes = document.querySelectorAll('.case-section h3, .case-section h4, .case-section p, .section-content > p');
+                textNodes.forEach((el, i) => {
+                    if (![...el.classList].some((c) => c.startsWith('reveal-'))) {
+                        el.classList.add('reveal-up');
+                        el.style.transitionDelay = `${i * 10}ms`;
+                    }
+                });
+
+                document.querySelectorAll('.case-section ul, .case-section ol').forEach((list) => {
+                    list.classList.add('stagger-children');
+                });
+            }
+            
+            // ========================================
+            // FAST OBSERVER
+            // ========================================
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('visible');
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+            const selectors = [
+                '.section-header', '.summary-card', '.responsibility-card', 
+                '.problem-column', '.problem-header', '.responsibilities-header',
+                '.column-pills', '.case-image', '.browser-mockup', '.mockup-container',
+                '.card-icon', '.column-icon',
+                '.reveal-up', '.reveal-down', '.reveal-left', '.reveal-right',
+                '.reveal-scale', '.reveal-pop', '.reveal-rotate', 
+                '.reveal-flip-x', '.reveal-flip-y', '.reveal-zoom-out', '.reveal-skew',
+                '.reveal-image', '.reveal-image-left', '.reveal-image-right',
+                '.reveal-image-center', '.reveal-image-diagonal', '.reveal-image-circle',
+                '.stagger-children', '[data-reveal]'
+            ];
+
+            assignAnimations();
+            document.querySelectorAll(selectors.join(', ')).forEach(el => observer.observe(el));
+
+            const images = document.querySelectorAll('.case-section img');
+            images.forEach((img) => {
+                const show = () => img.classList.add('visible');
+                if (img.complete) {
+                    show();
+                } else {
+                    img.addEventListener('load', show, { once: true });
+                    img.addEventListener('error', show, { once: true });
+                }
+            });
+            
+            // ========================================
+            // FAST STAGGER
+            // ========================================
+            document.querySelectorAll('.stagger-children').forEach(parent => {
+                const obs = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            Array.from(entry.target.children).forEach((child, i) => {
+                                child.style.transitionDelay = `${i * 15}ms`;
+                                child.classList.add('visible');
+                            });
+                        }
+                    });
+                }, { threshold: 0.1 });
+                obs.observe(parent);
+            });
+
+            document.querySelectorAll('.summary-cards-grid .summary-card').forEach((card, i) => {
+                card.style.transitionDelay = `${i * 15}ms`;
+            });
+            document.querySelectorAll('.responsibilities-grid .responsibility-card').forEach((card, i) => {
+                card.style.transitionDelay = `${i * 15}ms`;
+            });
+            document.querySelectorAll('.problem-columns .problem-column').forEach((col, i) => {
+                col.style.transitionDelay = `${i * 15}ms`;
+            });
+            document.querySelectorAll('.column-pills .pill').forEach((pill, i) => {
+                pill.style.transitionDelay = `${i * 10}ms`;
+            });
+            
+            // ========================================
+            // 3D CARD TILT
+            // ========================================
+            document.querySelectorAll('.summary-card, .responsibility-card').forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = (e.clientX - rect.left - rect.width / 2) / 20;
+                    const y = (e.clientY - rect.top - rect.height / 2) / 20;
+                    card.style.transform = `perspective(1000px) rotateX(${-y}deg) rotateY(${x}deg) scale(1.02)`;
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
+                });
+            });
+            
+            // ========================================
+            // INIT
+            // ========================================
+            window.addEventListener('load', () => {
+                document.querySelectorAll(selectors.join(', ')).forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight) el.classList.add('visible');
+                });
+            });
+        })();
     </script>
 </body>
 </html>

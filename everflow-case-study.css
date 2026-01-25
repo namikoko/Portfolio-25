@@ -299,6 +299,27 @@
     transition: all 0.3s ease;
 }
 
+.snapshot-icon {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 18px;
+    border-radius: 12px;
+    background: rgba(30, 53, 87, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--everflow-blue-bright);
+}
+
+.snapshot-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 .snapshot-card:hover {
     border-color: rgba(30, 53, 87, 0.4);
     background: rgba(30, 53, 87, 0.06);

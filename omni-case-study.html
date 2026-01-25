@@ -363,26 +363,56 @@
                 
 				<div class="strategy-grid">
 					<div class="strategy-card">
+						<div class="strategy-icon">
+							<svg viewBox="0 0 24 24" fill="none">
+								<rect x="3" y="4" width="18" height="16" rx="3"/>
+								<path d="M7 9h10M7 13h6"/>
+							</svg>
+						</div>
 						<h3>Integrated Benefits Hub</h3>
 						<p>One app for retirement, insurance, claims, benefit cards, and telemedicine.</p>
 						<p class="strategy-goal"><strong>Goal:</strong> Eliminate fragmentation</p>
 					</div>
 					<div class="strategy-card">
+						<div class="strategy-icon">
+							<svg viewBox="0 0 24 24" fill="none">
+								<rect x="4" y="3" width="16" height="18" rx="2"/>
+								<path d="M8 7h8M8 11h8M8 15h6"/>
+							</svg>
+						</div>
 						<h3>Digital Benefit Cards + Apple Wallet</h3>
 						<p>Instant access during medical visits.</p>
 						<p class="strategy-goal"><strong>Impact:</strong> Resolved top support ticket category</p>
 					</div>
 					<div class="strategy-card">
+						<div class="strategy-icon">
+							<svg viewBox="0 0 24 24" fill="none">
+								<path d="M4 6h16v12H4z"/>
+								<path d="M8 10h8M8 14h6"/>
+							</svg>
+						</div>
 						<h3>Paperless Claims System</h3>
 						<p>Submit → track → review, all in-app. No PDFs. No resubmissions.</p>
 						<p class="strategy-goal"><strong>Impact:</strong> Faster processing</p>
 					</div>
 					<div class="strategy-card">
+						<div class="strategy-icon">
+							<svg viewBox="0 0 24 24" fill="none">
+								<circle cx="12" cy="12" r="8"/>
+								<path d="M12 7v10M7 12h10"/>
+							</svg>
+						</div>
 						<h3>Direct Deposit Setup</h3>
 						<p>Self-serve configuration. Faster reimbursements.</p>
 						<p class="strategy-goal"><strong>Impact:</strong> Eliminated manual admin work</p>
 					</div>
 					<div class="strategy-card">
+						<div class="strategy-icon">
+							<svg viewBox="0 0 24 24" fill="none">
+								<path d="M12 3l7 3v6c0 4.2-3 7.8-7 9-4-1.2-7-4.8-7-9V6l7-3z"/>
+								<path d="M9.5 12.5l2 2 3-3"/>
+							</svg>
+						</div>
 						<h3>Enhanced Security</h3>
 						<p>Biometrics (Face ID / Touch ID), encrypted storage, role-based access.</p>
 						<p class="strategy-goal"><strong>Impact:</strong> Bank-grade security</p>
@@ -481,6 +511,13 @@
 					<li>Secures all sensitive information through biometrics</li>
 					<li>Establishes a scalable foundation for future enhancements</li>
 				</ul>
+
+				<div class="outcome-video">
+					<video autoplay muted loop playsinline preload="auto">
+						<source src="Assets/videos/Connection%20Assistance%20on%20Omni%20-%20P%C3%A9n%C3%A9ga%20(1080p,%20h264).mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
 
 				<p class="section-text"><strong>This was a structural transformation of the benefits ecosystem, not merely a visual update.</strong></p>
 			</div>
@@ -647,6 +684,148 @@
 				}, 520);
 			});
 		});
+	</script>
+
+	<!-- FAST DYNAMIC ANIMATIONS -->
+	<script>
+		(function() {
+			'use strict';
+			
+			// ========================================
+			// VARIED ANIMATION ASSIGNMENT
+			// Different animations for different elements
+			// ========================================
+			function assignAnimations() {
+				// IMAGES - varied clip-path reveals
+				const imageReveals = ['reveal-image', 'reveal-image-left', 'reveal-image-right', 'reveal-image-center', 'reveal-image-diagonal', 'reveal-image-circle'];
+				document.querySelectorAll('.case-image, .case-section img:not(.card-icon):not(.column-icon)').forEach((img, i) => {
+					if (!img.closest('.browser-mockup') && !img.closest('.phone-mockup')) {
+						img.classList.add(imageReveals[i % imageReveals.length]);
+					}
+				});
+				
+				// MOCKUPS - varied entrances
+				const mockupReveals = ['reveal-up', 'reveal-scale', 'reveal-flip-x'];
+				document.querySelectorAll('.browser-mockup, .mockup-container').forEach((el, i) => {
+					el.classList.add(mockupReveals[i % mockupReveals.length]);
+				});
+				
+				// ICONS - fast rotate reveal
+				document.querySelectorAll('.card-icon, .column-icon').forEach((el) => {
+					el.classList.add('reveal-rotate');
+				});
+				
+				// TEXT - quick reveal on headings and paragraphs
+				const textNodes = document.querySelectorAll('.case-section h3, .case-section h4, .case-section p, .section-content > p');
+				textNodes.forEach((el, i) => {
+					if (![...el.classList].some((c) => c.startsWith('reveal-'))) {
+						el.classList.add('reveal-up');
+						el.style.transitionDelay = `${i * 10}ms`;
+					}
+				});
+				
+				// LISTS - stagger children
+				document.querySelectorAll('.case-section ul, .case-section ol').forEach((list) => {
+					list.classList.add('stagger-children');
+				});
+			}
+			
+			// ========================================
+			// FAST INTERSECTION OBSERVER
+			// ========================================
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('visible');
+					}
+				});
+			}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+			const selectors = [
+				'.section-header', '.summary-card', '.responsibility-card', 
+				'.problem-column', '.problem-header', '.responsibilities-header',
+				'.column-pills', '.case-image', '.browser-mockup', '.mockup-container',
+				'.card-icon', '.column-icon',
+				'.reveal-up', '.reveal-down', '.reveal-left', '.reveal-right',
+				'.reveal-scale', '.reveal-pop', '.reveal-rotate', 
+				'.reveal-flip-x', '.reveal-flip-y', '.reveal-zoom-out', '.reveal-skew',
+				'.reveal-image', '.reveal-image-left', '.reveal-image-right',
+				'.reveal-image-center', '.reveal-image-diagonal', '.reveal-image-circle',
+				'.stagger-children', '[data-reveal]'
+			];
+
+			// Assign classes before observing so new reveal elements are included
+			assignAnimations();
+			document.querySelectorAll(selectors.join(', ')).forEach(el => observer.observe(el));
+
+			const images = document.querySelectorAll('.case-section img');
+			images.forEach((img) => {
+				const show = () => img.classList.add('visible');
+				if (img.complete) {
+					show();
+				} else {
+					img.addEventListener('load', show, { once: true });
+					img.addEventListener('error', show, { once: true });
+				}
+			});
+			
+			// ========================================
+			// FAST STAGGER
+			// ========================================
+			document.querySelectorAll('.stagger-children').forEach(parent => {
+				const obs = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('visible');
+							Array.from(entry.target.children).forEach((child, i) => {
+								child.style.transitionDelay = `${i * 15}ms`;
+								child.classList.add('visible');
+							});
+						}
+					});
+				}, { threshold: 0.1 });
+				obs.observe(parent);
+			});
+
+			// Cards with fast stagger
+			document.querySelectorAll('.summary-cards-grid .summary-card').forEach((card, i) => {
+				card.style.transitionDelay = `${i * 15}ms`;
+			});
+			document.querySelectorAll('.responsibilities-grid .responsibility-card').forEach((card, i) => {
+				card.style.transitionDelay = `${i * 15}ms`;
+			});
+			document.querySelectorAll('.problem-columns .problem-column').forEach((col, i) => {
+				col.style.transitionDelay = `${i * 15}ms`;
+			});
+			document.querySelectorAll('.column-pills .pill').forEach((pill, i) => {
+				pill.style.transitionDelay = `${i * 10}ms`;
+			});
+			
+			// ========================================
+			// 3D CARD TILT
+			// ========================================
+			document.querySelectorAll('.summary-card, .responsibility-card').forEach(card => {
+				card.addEventListener('mousemove', (e) => {
+					const rect = card.getBoundingClientRect();
+					const x = (e.clientX - rect.left - rect.width / 2) / 20;
+					const y = (e.clientY - rect.top - rect.height / 2) / 20;
+					card.style.transform = `perspective(1000px) rotateX(${-y}deg) rotateY(${x}deg) scale(1.02)`;
+				});
+				card.addEventListener('mouseleave', () => {
+					card.style.transform = '';
+				});
+			});
+			
+			// ========================================
+			// INIT
+			// ========================================
+			window.addEventListener('load', () => {
+				document.querySelectorAll(selectors.join(', ')).forEach(el => {
+					const rect = el.getBoundingClientRect();
+					if (rect.top < window.innerHeight) el.classList.add('visible');
+				});
+			});
+		})();
 	</script>
 </body>
 </html>
