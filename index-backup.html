@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.N Design - Portfolio</title>
+    <link rel="icon" type="image/png" href="Assets/fonts/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // INSTANT check before page renders - hide loader ONLY if coming back from case study
+        (function() {
+            const hasHash = window.location.hash !== '';
+            const referrer = document.referrer;
+            const isFromCaseStudy = referrer.includes('case-study') || referrer.includes('omni-case-study');
+            
+            // Only skip loader if coming from case study or has hash
+            // DO NOT skip on refresh - let the main script handle that
+            if (hasHash || isFromCaseStudy) {
+                document.documentElement.classList.add('skip-loader');
+            }
+        })();
+    </script>
+    <style>
+        /* Instant hide when skip-loader class is present */
+        html.skip-loader .preloader { display: none !important; }
+        html.skip-loader #mainContent { opacity: 1 !important; visibility: visible !important; }
+    </style>
+</head>
+<body>
+    <!-- Preloader - Minimal & Elegant -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="loading-counter" id="loadingCounter">0</div>
+            <div class="minimal-progress"></div>
+            <div class="loading-text">fine-tuning the details…</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <!-- Hero Section -->
+        <section class="hero" data-node-id="1:2">
+            <!-- Simple Navigation -->
+            <nav class="simple-nav">
+                <span>DENASOHA-NAMIKO</span>
+                <div class="nav-links">
+                    <a href="#projects" class="nav-link">PROJECTS</a>
+                    <a href="#play" class="nav-link">PLAY</a>
+                    <a href="#about" class="nav-link">ABOUT</a>
+                    <a href="Assets/fonts/Denasoha-Namiko%20Do%20cv%20(3).pdf" class="resume-button" target="_blank" rel="noopener noreferrer">RESUME ↗</a>
+                </div>
+            </nav>
+            
+            <!-- Main Typography -->
+            <div class="hero-center">
+                <h1 class="main-title">DESIGNER</h1>
+            </div>
+            
+            <!-- Bottom Info -->
+            <div class="hero-bottom">
+                <span>SENIOR PRODUCT DESIGNER & DEVELOPER</span>
+                <span>PORTFOLIO 2026</span>
+            </div>
+        </section>
+    
+    <!-- About Section -->
+    <section class="about-section" data-node-id="13:92">
+        <div class="about-wrapper">
+            <p class="wave-text" id="introText">I'm Denasoha-Namiko, a UX Designer and Front-End Developer creating beautiful & functional digital experiences. I move between design and code naturally, shaping products that feel thoughtful, accessible & visually elevated.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="project-card" data-project="desjardins" onclick="window.location.href='omni-case-study.html'">
+            <div class="project-meta">
+                <span class="project-year">Product Design · UX Design · Front-End</span>
+                <span class="project-category">Group Benefits & Retirement</span>
+            </div>
+            <div class="project-content">
+                <div class="project-info">
+                    <h2 class="project-name">omni</h2>
+                    <p class="project-subtitle">Unified group benefits & retirement app redesign.</p>
+                    <div class="project-details">
+                        <span class="detail-item">Strategic Initiative</span>
+                        <span class="detail-item">Tools · Figma & Strategy</span>
+                    </div>
+                </div>
+                <div class="project-arrow">→</div>
+            </div>
+            <div class="project-floating-items">
+                <div class="floating-item item-1">
+                    <img src="Assets/Photos/floating elements/Omni 1.svg" alt="Omni Screen 1">
+                </div>
+                <div class="floating-item item-2">
+                    <img src="Assets/Photos/floating elements/Omni 2.svg" alt="Omni Screen 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-project="evident" onclick="window.location.href='evident-case-study.html'">
+            <div class="project-meta">
+                <span class="project-year">Product Design · Interaction Design</span>
+                <span class="project-category">Industrial Software</span>
+            </div>
+            <div class="project-content">
+                <div class="project-info">
+                    <h2 class="project-name">evident</h2>
+                    <p class="project-subtitle">Redesigning how technicians record and review NDT results.</p>
+                    <div class="project-details">
+                        <span class="detail-item">Timeline · 3 months</span>
+                        <span class="detail-item">Tools · Axure, Figma & Illustrator</span>
+                    </div>
+                </div>
+                <div class="project-arrow">→</div>
+            </div>
+            <div class="project-floating-items">
+                <div class="floating-item item-1">
+                    <img src="Assets/Photos/floating elements/EVDT 1.svg" alt="Evident Screen">
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-project="everflow" onclick="window.location.href='everflow-case-study.html'">
+            <div class="project-meta">
+                <span class="project-year">Product Design · Interaction Design</span>
+                <span class="project-category">AdTech Platform</span>
+            </div>
+            <div class="project-content">
+                <div class="project-info">
+                    <h2 class="project-name">everflow</h2>
+                    <p class="project-subtitle">A cleaner, smarter way to manage Google Ads at scale.</p>
+                    <div class="project-details">
+                        <span class="detail-item">Timeline · 6 weeks</span>
+                        <span class="detail-item">Tools · Figma</span>
+                    </div>
+                </div>
+                <div class="project-arrow">→</div>
+            </div>
+            <div class="project-floating-items">
+                <div class="floating-item item-1">
+                    <img src="Assets/Photos/floating elements/EF-Screen (1).svg" alt="Everflow Screen">
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-project="ai" onclick="window.location.href='finsense-case-study.html'">
+            <div class="project-meta">
+                <span class="project-year">AI/ML Design</span>
+                <span class="project-category">Intelligent Budgeting Platform</span>
+            </div>
+            <div class="project-content">
+                <div class="project-info">
+                    <h2 class="project-name">FinSense</h2>
+                    <p class="project-subtitle">An AI-powered tool that helps users manage money smarter.</p>
+                    <div class="project-details">
+                        <span class="detail-item">Timeline · 4 weeks</span>
+                        <span class="detail-item">Tools · Figma</span>
+                    </div>
+                </div>
+                <div class="project-arrow">→</div>
+            </div>
+            <div class="project-floating-items">
+                <div class="floating-item item-1">
+                    <img src="Assets/Photos/floating elements/Finsense screen 1.svg" alt="FinSense Screen">
+                </div>
+                <div class="floating-item item-2">
+                    <img src="Assets/Photos/floating elements/Finsense screen 2.svg" alt="FinSense AI Screen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Play Section -->
+    <section class="play-section" id="play">
+        <div class="play-header">
+            <h2 class="play-title">play</h2>
+            <p class="play-subtitle">Things I like to do</p>
+        </div>
+        
+        <!-- Burst Gallery - Framer-style hover burst -->
+        <div class="burst-gallery">
+            <!-- Center image - click to open/close -->
+            <div class="burst-center">
+                <img src="Assets/Photos/floating elements/beautifulqueen.jpeg" alt="Center">
+            </div>
+            
+            <!-- Burst items positioned around center -->
+            <div class="burst-item"><img src="Assets/Play/manga1.jpeg" alt="Manga"></div>
+            <div class="burst-item"><img src="Assets/Play/painting1.jpeg" alt="Painting"></div>
+            <div class="burst-item"><img src="Assets/Play/Tattoo1.jpeg" alt="Tattoo"></div>
+            <div class="burst-item"><img src="Assets/Play/Drawing1.jpeg" alt="Drawing"></div>
+            <div class="burst-item"><img src="Assets/Play/doodle2.jpeg" alt="Doodle"></div>
+            <div class="burst-item"><img src="Assets/Play/Tattoo2.jpeg" alt="Tattoo"></div>
+            <div class="burst-item"><img src="Assets/Play/painting2.jpeg" alt="Painting"></div>
+            <div class="burst-item"><img src="Assets/Play/manga2.jpeg" alt="Manga"></div>
+            <div class="burst-item"><img src="Assets/Play/Drawing2.jpeg" alt="Drawing"></div>
+            <div class="burst-item"><img src="Assets/Play/Doodle1.jpeg" alt="Doodle"></div>
+            <div class="burst-item"><img src="Assets/Play/Painting3.jpeg" alt="Painting"></div>
+            <div class="burst-item"><img src="Assets/Play/Tattoo3.jpeg" alt="Tattoo"></div>
+            <div class="burst-item"><img src="Assets/Play/Drawing3.jpeg" alt="Drawing"></div>
+            <div class="burst-item"><img src="Assets/Play/painting4.jpeg" alt="Painting"></div>
+        </div>
+        
+        <script>
+            // Burst Gallery - Clean Framer-like implementation
+            // Features:
+            // - Click center: open/close burst
+            // - Hover item: pops up (JS-controlled, no CSS :hover glitch)
+            // - Click item: spotlight focus
+            // - Click backdrop or Escape: close spotlight
+            (function() {
+                const gallery = document.querySelector('.burst-gallery');
+                if (!gallery) return;
+                
+                const center = gallery.querySelector('.burst-center');
+                const items = Array.from(gallery.querySelectorAll('.burst-item'));
+                let hoveredItem = null;
+                let isAnimating = false; // animation lock
+                
+                // Toggle burst open/close with animation lock
+                function toggleBurst() {
+                    if (isAnimating) return;
+                    isAnimating = true;
+                    
+                    gallery.classList.toggle('is-open');
+                    
+                    // Clear spotlight and hover when closing
+                    if (!gallery.classList.contains('is-open')) {
+                        clearSpotlight();
+                        clearHover();
+                    }
+                    
+                    // Release lock after animation completes
+                    setTimeout(() => {
+                        isAnimating = false;
+                    }, 550);
+                }
+                
+                // Clear spotlight selection
+                function clearSpotlight() {
+                    gallery.classList.remove('has-spotlight');
+                    items.forEach(item => item.classList.remove('is-spotlight'));
+                }
+                
+                // Set spotlight on an item
+                function setSpotlight(item) {
+                    clearHover();
+                    items.forEach(el => el.classList.remove('is-spotlight'));
+                    item.classList.add('is-spotlight');
+                    gallery.classList.add('has-spotlight');
+                }
+                
+                // JS-controlled hover with throttle to prevent rapid state changes
+                let hoverTimeout = null;
+                const HOVER_DELAY = 50; // ms delay to prevent flicker
+                
+                function setHover(item) {
+                    if (hoveredItem === item) return;
+                    if (isAnimating) return;
+                    
+                    // Clear any pending hover
+                    if (hoverTimeout) {
+                        clearTimeout(hoverTimeout);
+                        hoverTimeout = null;
+                    }
+                    
+                    // Debounce the hover to prevent rapid changes
+                    hoverTimeout = setTimeout(() => {
+                        if (hoveredItem) {
+                            hoveredItem.classList.remove('is-hovered');
+                        }
+                        hoveredItem = item;
+                        item.classList.add('is-hovered');
+                        hoverTimeout = null;
+                    }, HOVER_DELAY);
+                }
+                
+                function clearHover() {
+                    // Clear any pending hover
+                    if (hoverTimeout) {
+                        clearTimeout(hoverTimeout);
+                        hoverTimeout = null;
+                    }
+                    
+                    if (hoveredItem) {
+                        const prev = hoveredItem;
+                        hoveredItem = null;
+                        prev.classList.remove('is-hovered');
+                    }
+                }
+                
+                // Click center to toggle
+                center.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    toggleBurst();
+                });
+                
+                // Hover and click handling for items
+                items.forEach(item => {
+                    // Mouse enter - set hover
+                    item.addEventListener('mouseenter', () => {
+                        if (!gallery.classList.contains('is-open')) return;
+                        if (gallery.classList.contains('has-spotlight')) return;
+                        if (isAnimating) return; // Fix #4
+                        setHover(item);
+                    });
+                    
+                    // Mouse leave - clear hover
+                    item.addEventListener('mouseleave', () => {
+                        if (hoveredItem === item) {
+                            clearHover();
+                        }
+                    });
+                    
+                    // Click to spotlight
+                    item.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        if (!gallery.classList.contains('is-open')) return;
+                        if (isAnimating) return; // Fix #4
+                        
+                        // Toggle spotlight on same item
+                        if (item.classList.contains('is-spotlight')) {
+                            clearSpotlight();
+                        } else {
+                            setSpotlight(item);
+                        }
+                    });
+                });
+                
+                // Click backdrop to close spotlight
+                gallery.addEventListener('click', (e) => {
+                    if (e.target.closest('.burst-center') || e.target.closest('.burst-item')) return;
+                    if (gallery.classList.contains('has-spotlight')) {
+                        clearSpotlight();
+                    }
+                });
+                
+                // Mouse leave gallery - clear hover and restore cursor
+                gallery.addEventListener('mouseleave', () => {
+                    clearHover();
+                });
+                
+                // Escape key handling
+                document.addEventListener('keydown', (e) => {
+                    if (e.key !== 'Escape') return;
+                    if (gallery.classList.contains('has-spotlight')) {
+                        clearSpotlight();
+                    } else if (gallery.classList.contains('is-open')) {
+                        gallery.classList.remove('is-open');
+                        clearHover();
+                    }
+                });
+            })();
+        </script>
+    </section>
+    
+    <!-- About Me Section - macOS Style -->
+    <section class="about-me-section" id="about">
+        <div class="about-title-row">
+            <h2 class="about-section-title">it's so lovely to meet you</h2>
+            <button class="close-desktop" id="closeDesktop">✕</button>
+        </div>
+        
+        <!-- Folder that opens to reveal desktop -->
+        <div class="mac-folder-container">
+            <!-- Closed Folder -->
+            <div class="mac-folder" id="aboutFolder">
+                <div class="folder-icon">
+                    <svg viewBox="0 0 80 64" fill="none">
+                        <path d="M4 12C4 8 7 5 11 5H28L34 12H69C73 12 76 15 76 19V55C76 59 73 62 69 62H11C7 62 4 59 4 55V12Z" fill="#3a3a3a"/>
+                        <path d="M4 20H76V55C76 59 73 62 69 62H11C7 62 4 59 4 55V20Z" fill="#4a4a4a"/>
+                    </svg>
+                </div>
+                <span class="folder-label">About Me</span>
+            </div>
+            
+            <!-- Desktop View (Hidden by default) -->
+            <div class="mac-desktop" id="macDesktop">
+                <!-- Photo Window -->
+                <div class="mac-window window-photo" data-window="photo">
+                    <div class="window-titlebar">
+                        <div class="window-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <span class="window-title">profile.jpg</span>
+                    </div>
+                    <div class="window-content">
+                        <img src="Assets/Photos/croppedicon.jpeg" alt="Profile Photo">
+                    </div>
+                </div>
+                
+                <!-- About Text Window -->
+                <div class="mac-window window-about" data-window="about">
+                    <div class="window-titlebar">
+                        <div class="window-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <span class="window-title">aboutme.txt</span>
+                    </div>
+                    <div class="window-content text-content">
+                        <p><strong>Hi, I’m Denasoha-Namiko,</strong> a UX designer, developer, and computational artist.</p>
+                        <p>I work across design, code, and visual experimentation to turn complex systems into intuitive, human-centered experiences. My practice blends artistic thinking with technical execution to create work that is both functional and unmistakably original.</p>
+                    </div>
+                    <!-- Action Buttons inside about window -->
+                    <div class="about-actions">
+                        <a href="Assets/fonts/Denasoha-Namiko%20Do%20cv%20(3).pdf" class="mac-btn btn-resume" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7,10 12,15 17,10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                            Download CV
+                        </a>
+                        <a href="mailto:dodenasohanamiko@gmail.com" class="mac-btn btn-email">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="M22 6L12 13L2 6"/>
+                            </svg>
+                            Say Hello
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- To Do Sticky Note - Right row 1 -->
+                <div class="mac-window window-todo" data-window="todo">
+                    <div class="window-titlebar titlebar-note">
+                        <span class="window-title">To do:</span>
+                    </div>
+                    <div class="window-content note-content">
+                        <ul>
+                            <li>Land a meaningful UX role</li>
+                            <li>Lead impactful projects</li>
+                            <li>Finish grad school (soon,hopefully)</li>
+                            <li>Craft a portfolio that stands out</li>
+                            <li>Expand my expertise and take creative risks</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Now Playing Widget - Right row 2 -->
+                <div class="mac-window window-spotify" data-window="spotify">
+                    <div class="window-titlebar titlebar-spotify">
+                        <div class="window-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <span class="window-title">Now Playing</span>
+                    </div>
+                    <div class="window-content spotify-content">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7vyRxHk6QcuvexB9vXmhlV?utm_source=generator&theme=0&autoplay=1&preload=auto" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="eager"></iframe>
+                    </div>
+                </div>
+                
+                <!-- Spotify Playlist Widget - Right row 3 -->
+                <div class="mac-window window-playlist" data-window="playlist">
+                    <div class="window-titlebar titlebar-spotify">
+                        <div class="window-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <span class="window-title">Playlist</span>
+                    </div>
+                    <div class="window-content playlist-content">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5r3NTiGrZyhIIYhdLFAwOk?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <!-- Calendar Widget - Center bottom -->
+                <div class="mac-window window-calendar" data-window="calendar">
+                    <div class="calendar-header">
+                        <div class="calendar-month" id="calMonth"></div>
+                        <div class="calendar-year" id="calYear"></div>
+                    </div>
+                    <div class="calendar-grid" id="calGrid">
+                        <!-- Days will be generated by JS -->
+                    </div>
+                    <div class="calendar-status">
+                        <span class="status-dot-green"></span>
+                        <span class="status-label">Available for work</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            // Live Calendar - Real-time sync with current date
+            function generateCalendar() {
+                const now = new Date();
+                const year = now.getFullYear();
+                const month = now.getMonth();
+                const today = now.getDate();
+                
+                const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 
+                                    'July', 'August', 'September', 'October', 'November', 'December'];
+                
+                // Set month and year
+                document.getElementById('calMonth').textContent = monthNames[month];
+                document.getElementById('calYear').textContent = year;
+                
+                // Get first day of month (0 = Sunday, 1 = Monday, etc.)
+                const firstDay = new Date(year, month, 1).getDay();
+                
+                // Get total days in month
+                const daysInMonth = new Date(year, month + 1, 0).getDate();
+                
+                // Get previous month's last days for padding
+                const prevMonth = new Date(year, month, 0);
+                const prevMonthDays = prevMonth.getDate();
+                
+                // Build calendar grid
+                const grid = document.getElementById('calGrid');
+                let html = '';
+                
+                // Day names header
+                const dayNames = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+                dayNames.forEach(day => {
+                    html += `<span class="cal-day-name">${day}</span>`;
+                });
+                
+                // Previous month's trailing days (grayed out)
+                for (let i = firstDay - 1; i >= 0; i--) {
+                    const prevDay = prevMonthDays - i;
+                    html += `<span class="cal-day prev-month">${prevDay}</span>`;
+                }
+                
+                // Current month days
+                for (let day = 1; day <= daysInMonth; day++) {
+                    const isToday = day === today ? ' today' : '';
+                    const isWeekend = ((firstDay + day - 1) % 7 === 0 || (firstDay + day - 1) % 7 === 6) ? ' weekend' : '';
+                    html += `<span class="cal-day${isToday}${isWeekend}">${day}</span>`;
+                }
+                
+                // Next month's leading days (grayed out) - fill remaining grid
+                const totalCells = Math.ceil((firstDay + daysInMonth) / 7) * 7;
+                const nextMonthDays = totalCells - (firstDay + daysInMonth);
+                for (let day = 1; day <= nextMonthDays && day <= 7; day++) {
+                    html += `<span class="cal-day next-month">${day}</span>`;
+                }
+                
+                grid.innerHTML = html;
+            }
+            
+            // Generate calendar on load
+            generateCalendar();
+            
+            // Auto-refresh calendar every minute to stay current
+            setInterval(generateCalendar, 60000);
+            
+            // Update calendar when window regains focus (in case browser was idle)
+            window.addEventListener('focus', generateCalendar);
+            
+            // Update calendar at midnight (check every hour)
+            setInterval(() => {
+                const now = new Date();
+                if (now.getHours() === 0 && now.getMinutes() === 0) {
+                    generateCalendar();
+                }
+            }, 3600000); // Check every hour
+        
+            // Folder open/close interaction
+            const folder = document.getElementById('aboutFolder');
+            const desktop = document.getElementById('macDesktop');
+            const closeBtn = document.getElementById('closeDesktop');
+
+            function alignPlaylistToAboutLine() {
+                if (!desktop || !desktop.classList.contains('active')) return;
+
+                const todoWindow = desktop.querySelector('.window-todo');
+                const playlist = desktop.querySelector('.window-playlist');
+
+                if (!todoWindow || !playlist) return;
+
+                const gap = 24;
+                const targetTop = todoWindow.getBoundingClientRect().bottom + gap;
+                const playlistTop = playlist.getBoundingClientRect().top;
+                const offset = targetTop - playlistTop;
+
+                playlist.style.setProperty('--playlist-offset', `${offset}px`);
+            }
+
+            function alignCalendarToNowPlayingLine() {
+                if (!desktop || !desktop.classList.contains('active')) return;
+
+                const playlistWindow = desktop.querySelector('.window-playlist');
+                const calendar = desktop.querySelector('.window-calendar');
+                const downloadIcon = desktop.querySelector('.window-about .btn-resume svg');
+                const sayHelloText = desktop.querySelector('.window-about .btn-email');
+
+                if (!playlistWindow || !calendar || !downloadIcon || !sayHelloText) return;
+
+                const coverOffset = 12;
+                const targetTop = playlistWindow.getBoundingClientRect().top + coverOffset;
+                const calendarTop = calendar.getBoundingClientRect().top;
+                const offset = targetTop - calendarTop;
+
+                calendar.style.setProperty('--calendar-offset', `${offset}px`);
+
+                const leftEdge = downloadIcon.getBoundingClientRect().left;
+                const rightEdge = sayHelloText.getBoundingClientRect().right;
+                const rawWidth = rightEdge - leftEdge;
+                const targetWidth = Math.min(Math.max(rawWidth - 40, 220), 320);
+
+                calendar.style.setProperty('--calendar-width', `${targetWidth}px`);
+                calendar.style.setProperty('--calendar-offset-x', '0px');
+            }
+
+            function alignNowPlayingToCursor() {
+                if (!desktop || !desktop.classList.contains('active')) return;
+
+                const nowPlaying = desktop.querySelector('.window-spotify');
+                const calendar = desktop.querySelector('.window-calendar');
+                const calendarTitle = desktop.querySelector('.window-calendar .calendar-month');
+
+                if (!nowPlaying || !calendar || !calendarTitle) return;
+
+                const targetTop = calendarTitle.getBoundingClientRect().top;
+                const nowPlayingTop = nowPlaying.getBoundingClientRect().top;
+                const offset = targetTop - nowPlayingTop;
+
+                nowPlaying.style.setProperty('--now-playing-offset', `${offset}px`);
+            }
+            
+            folder.addEventListener('click', () => {
+                folder.classList.add('opened');
+                desktop.classList.add('active');
+                closeBtn.classList.add('visible');
+
+                requestAnimationFrame(() => {
+                    alignPlaylistToAboutLine();
+                    alignCalendarToNowPlayingLine();
+                    alignNowPlayingToCursor();
+                    setTimeout(alignPlaylistToAboutLine, 120);
+                    setTimeout(alignCalendarToNowPlayingLine, 120);
+                    setTimeout(alignNowPlayingToCursor, 120);
+                });
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                folder.classList.remove('opened');
+                desktop.classList.remove('active');
+                closeBtn.classList.remove('visible');
+            });
+
+            window.addEventListener('resize', () => {
+                alignPlaylistToAboutLine();
+                alignCalendarToNowPlayingLine();
+                alignNowPlayingToCursor();
+            });
+        </script>
+    </section>
+    
+    </div> <!-- End main-content -->
+
+    <script>
+        // Preloader with counter animation
+        // Shows on: first visit, manual refresh
+        // Skips on: back navigation, internal navigation, returning from case study
+        
+        // IMMEDIATELY hide preloader if coming from back/forward cache
+        window.addEventListener('pageshow', function(event) {
+            if (event.persisted) {
+                // Page was loaded from back/forward cache
+                const preloader = document.getElementById('preloader');
+                const mainContent = document.getElementById('mainContent');
+                preloader.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                mainContent.classList.add('visible');
+            }
+        });
+        
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            const mainContent = document.getElementById('mainContent');
+            const counter = document.getElementById('loadingCounter');
+            
+            // Check navigation type - multiple methods for reliability
+            const navEntries = performance.getEntriesByType('navigation');
+            const navType = navEntries.length > 0 ? navEntries[0].type : 'navigate';
+            const isBackNavigation = navType === 'back_forward';
+            const hasHash = window.location.hash !== '';
+            const hasVisited = sessionStorage.getItem('hasVisitedPortfolio');
+            const isReload = navType === 'reload';
+            
+            // Also check referrer - if coming from same origin case study, skip loader
+            const referrer = document.referrer;
+            const isFromCaseStudy = referrer.includes('case-study') || referrer.includes('omni-case-study');
+            
+            // Skip loader if:
+            // - Navigating back/forward
+            // - Coming from a link with hash (#work)
+            // - Has visited before in this session (unless it's a manual refresh)
+            // - Coming back from case study page
+            if (isBackNavigation || hasHash || (hasVisited && !isReload) || isFromCaseStudy) {
+                preloader.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                mainContent.classList.add('visible');
+                // Scroll to hash if present
+                if (hasHash) {
+                    setTimeout(() => {
+                        const target = document.querySelector(window.location.hash);
+                        if (target) target.scrollIntoView({ behavior: 'auto' });
+                    }, 100);
+                }
+                return;
+            }
+            
+            // Mark that user has visited
+            sessionStorage.setItem('hasVisitedPortfolio', 'true');
+            
+            let count = 0;
+            
+            // Counter animation
+            const counterInterval = setInterval(function() {
+                counter.textContent = count;
+                count++;
+                
+                if (count > 100) {
+                    clearInterval(counterInterval);
+                    
+                    // Hide preloader after counter completes
+                    setTimeout(function() {
+                        preloader.classList.add('hidden');
+                        document.body.style.overflow = 'auto';
+                        
+                        setTimeout(function() {
+                            mainContent.classList.add('visible');
+                        }, 400);
+                    }, 500);
+                }
+            }, 25); // Speed of counter (25ms = smooth animation)
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const logo = document.querySelector('.logo-svg');
+            const container = document.querySelector('.main-title');
+            
+            if (container && logo) {
+                container.addEventListener('mousemove', function(e) {
+                    const rect = container.getBoundingClientRect();
+                    const centerX = rect.left + rect.width / 2;
+                    const centerY = rect.top + rect.height / 2;
+                    
+                    // Calculate mouse position relative to center
+                    const mouseX = e.clientX - centerX;
+                    const mouseY = e.clientY - centerY;
+                    
+                    // Calculate rotation angles (max 20 degrees)
+                    const rotateX = (mouseY / rect.height) * -20;
+                    const rotateY = (mouseX / rect.width) * 20;
+                    
+                    // Calculate translation (max 10px)
+                    const translateX = (mouseX / rect.width) * 10;
+                    const translateY = (mouseY / rect.height) * -5;
+                    
+                    // Apply transform
+                    logo.style.transform = `
+                        translateX(${translateX}px) 
+                        translateY(${translateY}px) 
+                        rotateX(${rotateX}deg) 
+                        rotateY(${rotateY}deg)
+                        translateZ(10px)
+                    `;
+                });
+                
+                container.addEventListener('mouseleave', function() {
+                    // Reset to original position
+                    logo.style.transform = 'translateX(0px) translateY(0px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+                });
+            }
+        });
+        
+        // Variable to track animation state
+        let projectsTriggered = false;
+        let playTriggered = false;
+        let aboutMeTriggered = false;
+        
+        function checkScrollAnimations() {
+            const projectsSection = document.querySelector('.projects-section');
+            const playSection = document.querySelector('.play-section');
+            const aboutMeSection = document.querySelector('.about-me-section');
+            const projectSlides = document.querySelectorAll('.project-slide');
+            const windowHeight = window.innerHeight;
+            
+            // Trigger projects section animations
+            if (projectsSection && projectSlides.length) {
+                const projectsRect = projectsSection.getBoundingClientRect();
+                
+                if (projectsRect.top < windowHeight * 0.8 && !projectsTriggered) {
+                    projectsTriggered = true;
+                    console.log('Projects section triggered');
+                    
+                    // Show projects section
+                    projectsSection.classList.add('visible');
+                    
+                    // Animate project cards with stagger
+                    const projectCards = document.querySelectorAll('.project-card');
+                    projectCards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.classList.add('animate');
+                            console.log(`Project ${index + 1} animated`);
+                        }, index * 300); // 300ms stagger between each project
+                    });
+                }
+            }
+            
+            // Trigger play section animations
+            if (playSection && !playTriggered) {
+                const playRect = playSection.getBoundingClientRect();
+                
+                if (playRect.top < windowHeight * 0.8) {
+                    playTriggered = true;
+                    console.log('Play section triggered');
+                    playSection.classList.add('visible');
+                }
+            }
+            
+            // Trigger about me section animations
+            if (aboutMeSection && !aboutMeTriggered) {
+                const aboutMeRect = aboutMeSection.getBoundingClientRect();
+                
+                if (aboutMeRect.top < windowHeight * 0.8) {
+                    aboutMeTriggered = true;
+                    console.log('About me section triggered');
+                    aboutMeSection.classList.add('visible');
+                }
+            }
+        }        window.addEventListener('scroll', checkScrollAnimations);
+        
+        // Also check on page load in case user starts scrolled down
+        window.addEventListener('load', checkScrollAnimations);
+
+        // Webflow/Framer Style Hero Interactions
+        const hero = document.querySelector('.hero');
+        const mainTitle = document.querySelector('.main-title');
+        const navItems = document.querySelectorAll('.nav-links span');
+        const resumeButton = document.querySelector('.resume-button');
+        
+        // Fix #3 - Guard to disable magnetic effects when in play section
+        let isInPlaySection = false;
+        const playSection = document.querySelector('.play-section');
+        
+        if (playSection) {
+            playSection.addEventListener('mouseenter', () => {
+                isInPlaySection = true;
+            });
+            playSection.addEventListener('mouseleave', () => {
+                isInPlaySection = false;
+            });
+        }
+
+        // Mouse tracking for gradient effect
+        hero.addEventListener('mousemove', (e) => {
+            if (isInPlaySection) return; // Fix #3
+            const rect = hero.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width) * 100;
+            const y = ((e.clientY - rect.top) / rect.height) * 100;
+            hero.style.setProperty('--mouse-x', x + '%');
+            hero.style.setProperty('--mouse-y', y + '%');
+        });
+
+        // Magnetic effect for main title
+        if (mainTitle) {
+            mainTitle.addEventListener('mousemove', (e) => {
+                if (isInPlaySection) return; // Fix #3
+                const rect = mainTitle.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                const deltaX = (e.clientX - centerX) / 20;
+                const deltaY = (e.clientY - centerY) / 20;
+                
+                mainTitle.style.transform = `translate(${deltaX}px, ${deltaY}px) scale(1.02) rotate(-0.5deg)`;
+            });
+
+            mainTitle.addEventListener('mouseleave', () => {
+                mainTitle.style.transform = 'translate(0, 0) scale(1) rotate(0deg)';
+            });
+        }
+
+        // Magnetic effect for nav items
+        if (navItems && navItems.length > 0) {
+            navItems.forEach(item => {
+                item.addEventListener('mousemove', (e) => {
+                    if (isInPlaySection) return; // Fix #3
+                    const rect = item.getBoundingClientRect();
+                    const centerX = rect.left + rect.width / 2;
+                    const centerY = rect.top + rect.height / 2;
+                    const deltaX = (e.clientX - centerX) / 10;
+                    const deltaY = (e.clientY - centerY) / 10;
+                    
+                    item.style.transform = `translate(${deltaX}px, ${deltaY}px) translateY(-2px) scale(1.02)`;
+                });
+
+                item.addEventListener('mouseleave', () => {
+                    item.style.transform = 'translate(0, 0) translateY(0) scale(1)';
+                });
+            });
+        }
+
+        // Enhanced resume button effect
+        if (resumeButton) {
+            resumeButton.addEventListener('mousemove', (e) => {
+                if (isInPlaySection) return; // Fix #3
+                const rect = resumeButton.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                const deltaX = (e.clientX - centerX) / 8;
+                const deltaY = (e.clientY - centerY) / 8;
+                
+                resumeButton.style.transform = `translate(${deltaX}px, ${deltaY}px) translateY(-3px) scale(1.05)`;
+            });
+
+            resumeButton.addEventListener('mouseleave', () => {
+                resumeButton.style.transform = 'translate(0, 0) translateY(0) scale(1)';
+            });
+        }
+
+        // Smooth scroll reveal for bottom info
+        const bottomInfo = document.querySelectorAll('.hero-bottom span');
+        if (bottomInfo.length > 0) {
+            setTimeout(() => {
+                bottomInfo.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.style.transform = 'translateY(0)';
+                        item.style.opacity = '1';
+                    }, index * 200);
+                });
+            }, 1500);
+        }
+
+        // Grab paragraph
+        const paragraph = document.getElementById("introText");
+
+        if (paragraph) {
+            // Split into words
+            const words = paragraph.innerText.trim().split(" ");
+
+            // Replace with spans
+            paragraph.innerHTML = words.map(w => `<span>${w}&nbsp;</span>`).join("");
+
+            // Select spans
+            const spans = paragraph.querySelectorAll("span");
+
+            // Observer for scroll-trigger
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            // Stagger animation
+                            spans.forEach((span, i) => {
+                                setTimeout(() => span.classList.add("visible"), i * 120);
+                            });
+                        }
+                    });
+                },
+                { threshold: 0.3 }
+            );
+
+            // Start observing
+            observer.observe(paragraph);
+        }
+    </script>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-text">view</div>
+
+    <script>
+        // Custom Cursor - Fun & Playful
+        const cursor = document.querySelector('.cursor');
+        const cursorText = document.querySelector('.cursor-text');
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+        let isHovering = false;
+        let cursorPaused = false; // Pause cursor in burst gallery
+        
+        // Burst gallery cursor handling
+        const burstGallery = document.querySelector('.burst-gallery');
+        const burstCenter = document.querySelector('.burst-center');
+        
+        if (burstCenter) {
+            // Show "OPEN" or "CLOSE" on center image hover
+            burstCenter.addEventListener('mouseenter', () => {
+                cursorPaused = false; // Enable cursor
+                cursor.style.opacity = '1';
+                cursor.classList.add('hover-project');
+                cursorText.style.opacity = '1';
+                cursorText.textContent = burstGallery.classList.contains('is-open') ? 'CLOSE' : 'OPEN';
+                isHovering = true;
+                
+                // Add wiggle after bounce
+                setTimeout(() => {
+                    cursor.classList.add('wiggle');
+                }, 500);
+            });
+            
+            burstCenter.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover-project', 'wiggle');
+                cursorText.style.opacity = '0';
+                isHovering = false;
+            });
+            
+            // Update text after click (open/close toggle)
+            burstCenter.addEventListener('click', () => {
+                setTimeout(() => {
+                    cursorText.textContent = burstGallery.classList.contains('is-open') ? 'CLOSE' : 'OPEN';
+                }, 50);
+            });
+        }
+        
+        // Hide cursor on burst items (not center)
+        if (burstGallery) {
+            const burstItems = burstGallery.querySelectorAll('.burst-item');
+            burstItems.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    cursorPaused = true;
+                    cursor.style.opacity = '0';
+                    cursorText.style.opacity = '0';
+                });
+                item.addEventListener('mouseleave', () => {
+                    cursorPaused = false;
+                    cursor.style.opacity = '1';
+                });
+            });
+        }
+        
+        // Smooth cursor movement
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+        
+        function animateCursor() {
+            // Skip cursor updates entirely when in burst gallery
+            if (cursorPaused) {
+                requestAnimationFrame(animateCursor);
+                return;
+            }
+            
+            const speed = isHovering ? 0.1 : 0.2;
+            cursorX += (mouseX - cursorX) * speed;
+            cursorY += (mouseY - cursorY) * speed;
+            
+            cursor.style.left = cursorX + 'px';
+            cursor.style.top = cursorY + 'px';
+            cursorText.style.left = cursorX + 'px';
+            cursorText.style.top = cursorY + 'px';
+            
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+        
+        // Project card hover
+        projectCards.forEach(card => {
+            card.addEventListener('mouseenter', (e) => {
+                cursor.classList.add('hover-project');
+                isHovering = true;
+                
+                // Add wiggle after bounce animation
+                setTimeout(() => {
+                    cursor.classList.add('wiggle');
+                }, 500);
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover-project', 'wiggle');
+                isHovering = false;
+            });
+        });
+        
+        // Hide cursor when leaving window
+        document.addEventListener('mouseleave', () => {
+            cursor.style.opacity = '0';
+            cursorText.style.opacity = '0';
+        });
+        document.addEventListener('mouseenter', () => {
+            cursor.style.opacity = '1';
+        });
+        
+        // Click effect - squish!
+        document.addEventListener('mousedown', () => {
+            cursor.style.transform = 'translate(-50%, -50%) scale(0.8)';
+            cursor.style.borderRadius = '40%';
+        });
+        document.addEventListener('mouseup', () => {
+            cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+            cursor.style.borderRadius = '50%';
+        });
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="sticker-footer">
+        <div class="footer-marquee">
+            <div class="marquee-track">
+                <span>LET'S TALK SOON</span>
+                <span>•</span>
+                <span>LET'S TALK SOON</span>
+                <span>•</span>
+                <span>LET'S TALK SOON</span>
+                <span>•</span>
+                <span>LET'S TALK SOON</span>
+                <span>•</span>
+                <span>LET'S TALK SOON</span>
+                <span>•</span>
+                <span>LET'S TALK SOON</span>
+                <span>•</span>
+            </div>
+        </div>
+        <div class="footer-simple">DENASOHA-NAMIKO ©</div>
+    </footer>
+
+    <!-- Smooth Scroll Navigation with Framer-like Animation -->
+    <script>
+        // Smooth scroll with custom easing (Framer-like spring feel)
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
+                    const startPosition = window.pageYOffset;
+                    const distance = targetPosition - startPosition;
+                    const duration = 1200; // Longer duration for smooth feel
+                    let startTime = null;
+
+                    // Custom easing function - spring-like ease out
+                    function easeOutExpo(t) {
+                        return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+                    }
+
+                    function animation(currentTime) {
+                        if (startTime === null) startTime = currentTime;
+                        const timeElapsed = currentTime - startTime;
+                        const progress = Math.min(timeElapsed / duration, 1);
+                        const ease = easeOutExpo(progress);
+                        
+                        window.scrollTo(0, startPosition + (distance * ease));
+                        
+                        if (timeElapsed < duration) {
+                            requestAnimationFrame(animation);
+                        }
+                    }
+
+                    requestAnimationFrame(animation);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
