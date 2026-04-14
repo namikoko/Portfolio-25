@@ -3,674 +3,593 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FINSENSE – Case Study</title>
+    <title>Finsense Case Study | DENASOHA-NAMIKO</title>
     <link rel="icon" type="image/png" href="Assets/fonts/favicon.png">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="case-study.css">
     <link rel="stylesheet" href="finsense-case-study.css">
-    <link rel="preload" href="Assets/fonts/NeutralFace.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="case-nav">
-    <a href="index.html#projects" class="case-nav-logo">← back</a>
-        <div class="case-nav-progress">
-            <div class="progress-bar" id="progressBar"></div>
+
+    <nav class="cs-nav">
+        <a href="index.html" class="cs-nav-back">
+            <span class="material-symbols-outlined">arrow_back</span>
+            Back
+        </a>
+        <div class="cs-nav-progress">
+            <div class="cs-progress-bar"></div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="case-hero">
-        <!-- Background Text -->
-        <h1 class="hero-background-text" style="font-size: clamp(100px, 16vw, 240px);">FINSENSE</h1>
-        
-        <!-- Metadata -->
-        <div class="hero-metadata hero-metadata-top-left">AI Experience Design Project</div>
-        <div class="hero-metadata hero-metadata-top-right">2025</div>
-        <div class="hero-metadata hero-metadata-bottom-left">Product Innovation Project</div>
-        <div class="hero-metadata hero-metadata-bottom-right">Case Study</div>
-        
-        <!-- Screen Mockup (centered) -->
-        <div class="hero-center">
-            <img src="Assets/Photos/finsense screen.svg" alt="FinSense Interface" class="phone-mockup" style="max-width: 55%; height: auto;">
+    <section class="cs-hero">
+        <div class="cs-hero-content">
+            <div class="cs-hero-meta">
+                <span class="cs-badge">Case Study</span>
+                <span class="cs-year">2025</span>
+            </div>
+            <h1 class="cs-hero-title">FINSENSE: AI-Powered Financial Guidance</h1>
+            <p class="cs-hero-subtitle">Designing a conversational AI experience that helps everyday people understand their spending, identify behavioral patterns, and make financial decisions without the stress.</p>
+            
+            <div class="cs-hero-details">
+                <div class="cs-detail">
+                    <span class="cs-detail-label">Role</span>
+                    <span class="cs-detail-value">Lead UX Designer, AI Interaction Designer</span>
+                </div>
+                <div class="cs-detail">
+                    <span class="cs-detail-label">Scope</span>
+                    <span class="cs-detail-value">Product discovery, experience design, AI interaction model, systems design</span>
+                </div>
+                <div class="cs-detail">
+                    <span class="cs-detail-label">Platform</span>
+                    <span class="cs-detail-value">Mobile application</span>
+                </div>
+                <div class="cs-detail">
+                    <span class="cs-detail-label">Domain</span>
+                    <span class="cs-detail-value">Personal finance, AI, behavioral design</span>
+                </div>
+            </div>
+        </div>
+        <div class="cs-hero-image">
+            <img src="Assets/Photos/finsense screen.svg" alt="Finsense App Interface" class="cs-hero-phone">
+        </div>
+        <div class="cs-scroll-indicator">
+            <div class="cs-scroll-line"></div>
         </div>
     </section>
 
-    <!-- Content Sections -->
-    <div class="case-content-wrapper">
-        <!-- Section 01 - Executive Summary -->
-        <section class="case-section" id="section-01">
-            <div class="section-header">
-                <span class="section-number">01</span>
-                <h2 class="section-title">Executive Summary</h2>
-                <p class="section-subtitle">AI-powered financial clarity for everyday decisions.</p>
+    <section class="cs-section cs-section-dark" id="section-01">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">01</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">WHY THIS PROJECT MATTERED</span>
             </div>
-            <div class="section-content">
-                <div class="summary-narrative">
-                    <div class="narrative-block">
-                        <p class="narrative-lead">FinSense is an AI-driven financial guidance experience designed to help people understand their spending, build healthier money habits, and make decisions with clarity instead of stress.</p>
-                        <p>Most users know they should track budgets or manage spending, but the cognitive load is too high. They quit by week two.</p>
-                    </div>
-                    <div class="narrative-block">
-                        <p>I designed an AI-powered system that analyzes real transactions, identifies behavioral patterns, and gives users personalized recommendations in natural language. Instead of navigating charts and tabs, users simply ask questions and receive contextual, actionable answers.</p>
-                    </div>
-                </div>
-                <p class="section-footer">Turning financial overwhelm into <em>calm</em>, <em>personalized clarity</em>.</p>
+            
+            <div class="cs-narrative">
+                <p class="cs-lead-text">Most people know they should track their spending. <span class="cs-keyword">Almost nobody does it consistently</span> past the first two weeks.</p>
+                <p class="cs-body-text">The tools exist. The apps are free. <span class="cs-highlight">The problem is not access.</span></p>
+                <p class="cs-body-text">The problem is that every budgeting app on the market was built around the assumption that users would behave like spreadsheets: <span class="cs-keyword">consistent, disciplined, category-aware</span>. Real people do not work that way.</p>
             </div>
-        </section>
 
-        <!-- Section 02 - The Problem -->
-        <section class="case-section" id="section-02">
-            <div class="section-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title">The Problem</h2>
-                <p class="section-subtitle">Why existing tools fail real people.</p>
-            </div>
-            <div class="section-content">
-                <div class="problem-statement-intro">
-                    <p>Managing money is stressful for most people, not because the tools are missing, but because the tools still expect people to behave like spreadsheets.</p>
+            <div class="fs-behavior-grid">
+                <div class="fs-behavior-item">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    <span>They spend impulsively</span>
                 </div>
-                <div class="problem-label">Three core issues shaped the opportunity:</div>
-                <div class="problem-cards">
-                    <div class="problem-card">
-                        <div class="problem-card-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/>
-                            </svg>
-                        </div>
-                        <h4>Information Overload</h4>
-                        <p>Users see totals, trends, and endless categories without guidance.</p>
-                    </div>
-                    <div class="problem-card">
-                        <div class="problem-card-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/>
-                            </svg>
-                        </div>
-                        <h4>Behavioral Blind Spots</h4>
-                        <p>People cannot easily identify what habits actually drain their budget.</p>
-                    </div>
-                    <div class="problem-card">
-                        <div class="problem-card-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-                            </svg>
-                        </div>
-                        <h4>Low Follow-Through</h4>
-                        <p>Traditional budgeting apps are rigid and time-consuming. They do not adapt to real behavior.</p>
-                    </div>
+                <div class="fs-behavior-item">
+                    <span class="material-symbols-outlined">event_busy</span>
+                    <span>They forget subscriptions</span>
                 </div>
-                <p class="section-footer">The problem was not numbers. It was <em>emotional load</em>, <em>friction</em>, and <em>lack of guidance</em>.</p>
+                <div class="fs-behavior-item">
+                    <span class="material-symbols-outlined">visibility_off</span>
+                    <span>They avoid their balance when behind</span>
+                </div>
+                <div class="fs-behavior-item">
+                    <span class="material-symbols-outlined">exit_to_app</span>
+                    <span>They quit apps that make them feel worse</span>
+                </div>
             </div>
-        </section>
 
-        <!-- Section 03 - My Responsibilities -->
-        <section class="case-section" id="section-03">
-            <div class="section-header">
-                <span class="section-number">03</span>
-                <h2 class="section-title">My Responsibilities</h2>
-                <p class="section-subtitle">End-to-end product discovery and design.</p>
-            </div>
-            <div class="section-content">
-                <div class="responsibility-intro">
-                    <p>I led the end-to-end product discovery, experience design, and AI interaction model for FinSense.</p>
-                </div>
-                <div class="responsibility-grid">
-                    <div class="responsibility-block">
-                        <div class="responsibility-header">
-                            <span class="responsibility-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
-                                </svg>
-                            </span>
-                            <h4>Research and Strategy</h4>
-                        </div>
-                        <ul class="responsibility-list">
-                            <li>User interviews focused on budgeting anxiety</li>
-                            <li>Mapping behavioral spending patterns</li>
-                            <li>Identifying AI opportunities for guidance, not automation</li>
-                        </ul>
-                    </div>
-                    <div class="responsibility-block">
-                        <div class="responsibility-header">
-                            <span class="responsibility-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/>
-                                </svg>
-                            </span>
-                            <h4>Experience Design</h4>
-                        </div>
-                        <ul class="responsibility-list">
-                            <li>Chat-based decision flows</li>
-                            <li>Spending analysis visualizations</li>
-                            <li>Subscription tracking</li>
-                            <li>Habit breakdowns</li>
-                        </ul>
-                    </div>
-                    <div class="responsibility-block">
-                        <div class="responsibility-header">
-                            <span class="responsibility-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/>
-                                </svg>
-                            </span>
-                            <h4>AI Interaction Model</h4>
-                        </div>
-                        <ul class="responsibility-list">
-                            <li>Natural-language prompts</li>
-                            <li>Context-aware financial explanations</li>
-                            <li>Personalized recommendations</li>
-                        </ul>
-                    </div>
-                    <div class="responsibility-block">
-                        <div class="responsibility-header">
-                            <span class="responsibility-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-                                </svg>
-                            </span>
-                            <h4>System Design</h4>
-                        </div>
-                        <ul class="responsibility-list">
-                            <li>Structured logic for financial insights</li>
-                            <li>Conversation patterns</li>
-                            <li>Info architecture for hybrid chat + dashboard</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="section-footer">The work blended <em>financial literacy</em>, <em>behavioral science</em>, and <em>conversational UX</em>.</p>
-            </div>
-        </section>
-
-        <!-- Section 04 - Research Insights -->
-        <section class="case-section" id="section-04">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2 class="section-title">Research Insights</h2>
-                <p class="section-subtitle">What users actually need from financial tools.</p>
-            </div>
-            <div class="section-content">
-                <div class="insights-intro">From interviews and spending data studies, three themes emerged:</div>
-                <div class="insights-list">
-                    <div class="insight-item">
-                        <div class="insight-number">1</div>
-                        <div class="insight-content">
-                            <h4>People want to know what's "normal" for them</h4>
-                            <p>Most users don't want a perfect budget. They want to understand patterns that actually matter.</p>
-                        </div>
-                    </div>
-                    <div class="insight-item">
-                        <div class="insight-number">2</div>
-                        <div class="insight-content">
-                            <h4>Behavior drives money problems, not categories</h4>
-                            <p>Impulse spending, unused subscriptions, inconsistent habits. Not the coffee.</p>
-                        </div>
-                    </div>
-                    <div class="insight-item">
-                        <div class="insight-number">3</div>
-                        <div class="insight-content">
-                            <h4>People take action only when the recommendation feels doable</h4>
-                            <p>They need simple, realistic next steps, not long-term plans.</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="section-footer"><em>Clarity</em> + <em>emotional safety</em> unlock financial follow-through.</p>
-            </div>
-        </section>
-
-        <!-- Section 05 - Product Strategy -->
-        <section class="case-section" id="section-05">
-            <div class="section-header">
-                <span class="section-number">05</span>
-                <h2 class="section-title">Product Strategy</h2>
-                <p class="section-subtitle">Reframing budgeting as guided intelligence.</p>
-            </div>
-            <div class="section-content">
-                <div class="strategy-intro">
-                    <p>The solution reframed budgeting from "track everything manually" to "let the system read your behavior and guide you."</p>
-                </div>
-                <div class="strategy-pillars">
-                    <div class="strategy-pillar">
-                        <div class="pillar-marker"></div>
-                        <div class="pillar-content">
-                            <h4>AI Spending Advisor</h4>
-                            <p>Narrates trends in plain language.</p>
-                        </div>
-                    </div>
-                    <div class="strategy-pillar">
-                        <div class="pillar-marker"></div>
-                        <div class="pillar-content">
-                            <h4>Behavior Detection</h4>
-                            <p>Flags invisible leaks like subscriptions, impulses, and delivery spikes.</p>
-                        </div>
-                    </div>
-                    <div class="strategy-pillar">
-                        <div class="pillar-marker"></div>
-                        <div class="pillar-content">
-                            <h4>Goal-Based Prompts</h4>
-                            <p>Users can ask for help with budgets, savings, credit, trips, grocery lists, and more.</p>
-                        </div>
-                    </div>
-                    <div class="strategy-pillar">
-                        <div class="pillar-marker"></div>
-                        <div class="pillar-content">
-                            <h4>Chat as the Main Interface</h4>
-                            <p>The AI speaks like a financial coach, not a calculator.</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="section-footer"><em>Guidance</em> over dashboards. <em>Support</em> over spreadsheets.</p>
-            </div>
-        </section>
-
-        <!-- Section 06 - Key Design Decisions -->
-        <section class="case-section" id="section-06">
-            <div class="section-header">
-                <span class="section-number">06</span>
-                <h2 class="section-title">Key Design Decisions</h2>
-                <p class="section-subtitle">Building for real life, not perfect discipline.</p>
-            </div>
-            <div class="section-content">
-                <div class="decisions-grid">
-                    <div class="decision-card">
-                        <h4>Hybrid Layout</h4>
-                        <p>A clean dashboard for visibility, paired with chat for deeper decisions.</p>
-                    </div>
-                    <div class="decision-card">
-                        <h4>Behavior-Based Insights</h4>
-                        <p>Instead of category totals, FinSense shows patterns like "delivery spikes" or "low-value subscriptions."</p>
-                    </div>
-                    <div class="decision-card">
-                        <h4>Explanations Before Solutions</h4>
-                        <p>The system always explains the insight first, then proposes changes.</p>
-                    </div>
-                    <div class="decision-card">
-                        <h4>Realistic Budget Modeling</h4>
-                        <p>Budgets are built around actual behavior, not idealized templates.</p>
-                    </div>
-                </div>
-                <p class="section-footer">We designed for <em>real life</em>, not <em>perfect discipline</em>.</p>
-            </div>
-        </section>
-
-        <!-- Section 07 - Impact -->
-        <section class="case-section" id="section-07">
-            <div class="section-header">
-                <span class="section-number">07</span>
-                <h2 class="section-title">Impact</h2>
-                <p class="section-subtitle">Measurable improvements from user testing.</p>
-            </div>
-            <div class="section-content">
-                <div class="impact-intro-text">Test participants consistently reported:</div>
-                <div class="impact-metrics">
-                    <div class="metric-card featured">
-                        <div class="metric-value">35–50%</div>
-                        <div class="metric-label">Reduction in budgeting stress</div>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/>
-                            </svg>
-                        </div>
-                        <div class="metric-label">Higher comprehension</div>
-                        <p>Users understood where their money actually went, without charts</p>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-                            </svg>
-                        </div>
-                        <div class="metric-label">Faster decisions</div>
-                        <p>Users made budgeting choices in minutes, not hours</p>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                        </div>
-                        <div class="metric-label">Increased follow-through</div>
-                        <p>People stuck to plans when they felt personalized and achievable</p>
-                    </div>
-                </div>
-                <p class="section-footer"><em>Clarity</em> led to confidence. <em>Confidence</em> led to action.</p>
-            </div>
-        </section>
-
-        <!-- Section 08 - Final Outcome -->
-        <section class="case-section" id="section-08">
-            <div class="section-header">
-                <span class="section-number">08</span>
-                <h2 class="section-title">Final Outcome</h2>
-                <p class="section-subtitle">What FinSense delivered.</p>
-            </div>
-            <div class="section-content">
-                <div class="outcome-grid">
-                    <div class="outcome-item">
-                        <div class="outcome-marker">→</div>
-                        <div class="outcome-content">
-                            <h4>Personalized financial narratives</h4>
-                            <p>Users get context-aware explanations written in natural language.</p>
-                        </div>
-                    </div>
-                    <div class="outcome-item">
-                        <div class="outcome-marker">→</div>
-                        <div class="outcome-content">
-                            <h4>Behavior-driven budgets</h4>
-                            <p>Custom plans based on actual activity instead of generic rules.</p>
-                        </div>
-                    </div>
-                    <div class="outcome-item">
-                        <div class="outcome-marker">→</div>
-                        <div class="outcome-content">
-                            <h4>Low cognitive load flows</h4>
-                            <p>Users simply ask questions, and the system generates solutions.</p>
-                        </div>
-                    </div>
-                    <div class="outcome-item">
-                        <div class="outcome-marker">→</div>
-                        <div class="outcome-content">
-                            <h4>Unified experience</h4>
-                            <p>Dashboard + chat work together instead of competing.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Product Image -->
-                <div class="product-showcase">
-                    <img src="Assets/Photos/Ai cover.svg" alt="FinSense Product Interface" class="product-image">
-                </div>
-                
-                <p class="section-footer">A calm financial ecosystem built around <em>how people actually think</em>.</p>
-            </div>
-        </section>
-
-        <!-- Section 09 - Reflection -->
-        <section class="case-section" id="section-09">
-            <div class="section-header">
-                <span class="section-number">09</span>
-                <h2 class="section-title">Reflection</h2>
-                <p class="section-subtitle">Lessons from designing AI-powered finance.</p>
-            </div>
-            <div class="section-content">
-                <div class="reflection-grid">
-                    <div class="reflection-card">
-                        <div class="reflection-label">The Problem</div>
-                        <p>Budgeting tools assume users have time, structure, and discipline. They don't. People need a product that adapts to their behavior, not the other way around.</p>
-                    </div>
-                    <div class="reflection-card">
-                        <div class="reflection-label">The Approach</div>
-                        <p>Blend behavioral design, financial literacy, and conversational UX to reduce effort and emotional friction.</p>
-                    </div>
-                    <div class="reflection-card">
-                        <div class="reflection-label">The Surprise</div>
-                        <p>Users trusted the system more when it explained their patterns before offering suggestions.</p>
-                    </div>
-                    <div class="reflection-card">
-                        <div class="reflection-label">The Lesson</div>
-                        <p>AI is most valuable when it clarifies decision-making, not when it replaces it.</p>
-                    </div>
-                </div>
-                <p class="section-footer closing-footer">Good financial design makes users feel <em>safe</em>, <em>supported</em>, and <em>capable</em>.</p>
-            </div>
-        </section>
-    </div>
-
-    <!-- Footer CTA -->
-    <section class="case-footer">
-        <div class="footer-content">
-            <h2>Ready for the next project?</h2>
-            <a href="index.html#projects" class="footer-link">← Back to portfolio</a>
+            <blockquote class="cs-quote">
+                <span class="cs-quote-icon">"</span>
+                <p>FinSense was designed around a different assumption: that the right financial tool should <span class="cs-quote-highlight">adapt to how people actually behave</span>, not punish them for failing to behave differently.</p>
+            </blockquote>
         </div>
     </section>
+
+    <section class="cs-section cs-section-light" id="section-02">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">02</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">WHAT I OWNED</span>
+            </div>
+
+            <div class="fs-ownership-grid">
+                <div class="fs-ownership-card" data-category="research">
+                    <div class="fs-ownership-icon">
+                        <span class="material-symbols-outlined">psychology</span>
+                    </div>
+                    <h3>Research and Strategy</h3>
+                    <ul class="fs-ownership-list">
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">record_voice_over</span></span>User interviews focused on budgeting anxiety</li>
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">hub</span></span>Behavioral spending pattern mapping</li>
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">compare</span></span>Competitive analysis of existing tools</li>
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">lightbulb</span></span>AI opportunity identification</li>
+                    </ul>
+                </div>
+
+                <div class="fs-ownership-card" data-category="experience">
+                    <div class="fs-ownership-icon">
+                        <span class="material-symbols-outlined">draw</span>
+                    </div>
+                    <h3>Experience Design</h3>
+                    <ul class="fs-ownership-list">
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">chat</span></span>Chat-based decision flows</li>
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">analytics</span></span>Spending analysis visualizations</li>
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">subscriptions</span></span>Subscription tracking</li>
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">psychology_alt</span></span>Habit breakdown screens</li>
+                    </ul>
+                </div>
+
+                <div class="fs-ownership-card" data-category="ai">
+                    <div class="fs-ownership-icon">
+                        <span class="material-symbols-outlined">smart_toy</span>
+                    </div>
+                    <h3>AI Interaction Model</h3>
+                    <ul class="fs-ownership-list">
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">edit_note</span></span>Natural language prompt design</li>
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">target</span></span>Context-aware explanation patterns</li>
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">recommend</span></span>Personalized recommendation logic</li>
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">account_tree</span></span>Conversation flow architecture</li>
+                    </ul>
+                </div>
+
+                <div class="fs-ownership-card" data-category="systems">
+                    <div class="fs-ownership-icon">
+                        <span class="material-symbols-outlined">widgets</span>
+                    </div>
+                    <h3>Systems Design</h3>
+                    <ul class="fs-ownership-list">
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">schema</span></span>Structured logic for financial insights</li>
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">dashboard</span></span>Hybrid chat and dashboard IA</li>
+                        <li><span class="fs-list-icon"><span class="material-symbols-outlined">library_books</span></span>Conversation pattern library</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cs-section cs-section-dark" id="section-03">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">03</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">WHY EXISTING TOOLS FAIL</span>
+            </div>
+
+            <p class="cs-intro-text">Before designing anything, I audited the tools people were already using <span class="cs-highlight-accent">and abandoning</span>. The pattern was consistent across all of them.</p>
+
+            <div class="fs-failures-grid">
+                <div class="fs-failure-card">
+                    <div class="fs-failure-header">
+                        <span class="material-symbols-outlined">category</span>
+                        <h3>Category-based budgeting assumes the wrong thing</h3>
+                    </div>
+                    <p>Apps like Mint and YNAB organize spending into categories and show you totals. The assumption is that <span class="cs-keyword-light">seeing the number will change the behavior</span>. It does not.</p>
+                    <p class="fs-failure-detail">Knowing you spent $340 on food delivery last month does not tell you which orders were worth it, which were stress purchases, or what a realistic target actually looks like for your life.</p>
+                </div>
+
+                <div class="fs-failure-card">
+                    <div class="fs-failure-header">
+                        <span class="material-symbols-outlined">calendar_today</span>
+                        <h3>Rigid templates create immediate failure</h3>
+                    </div>
+                    <p>Most apps ask users to set a budget <span class="cs-keyword-light">before they understand their own patterns</span>.</p>
+                    <p class="fs-failure-detail">Users set unrealistic targets, fail them in week one, feel shame, and quit. The tool created the failure it was supposed to prevent.</p>
+                </div>
+
+                <div class="fs-failure-card">
+                    <div class="fs-failure-header">
+                        <span class="material-symbols-outlined">show_chart</span>
+                        <h3>Dashboards require effort to interpret</h3>
+                    </div>
+                    <p>Charts and trend lines are powerful for people who already understand their finances. For the users who need help most, they <span class="cs-keyword-light">add cognitive load</span> rather than reducing it.</p>
+                    <p class="fs-failure-detail">You still have to do the work of figuring out what the data means and what to do about it.</p>
+                </div>
+
+                <div class="fs-failure-card">
+                    <div class="fs-failure-header">
+                        <span class="material-symbols-outlined">gavel</span>
+                        <h3>None of them explain before they judge</h3>
+                    </div>
+                    <p>Every existing tool surfaces a number and <span class="cs-keyword-light">leaves the user to feel bad about it</span>.</p>
+                    <p class="fs-failure-detail">None of them contextualize the behavior, explain why it happened, or offer a realistic path forward. FinSense was built to do exactly that.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cs-section cs-section-light" id="section-04">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">04</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">RESEARCH: WHAT USERS ACTUALLY TOLD US</span>
+            </div>
+
+            <div class="cs-narrative">
+                <p class="cs-lead-text">I conducted user interviews focused specifically on <span class="cs-keyword">budgeting anxiety</span>, not budgeting behavior. The distinction mattered.</p>
+                <p class="cs-body-text">I wanted to understand <span class="cs-highlight">why people stopped using financial tools</span>, not just how they used them.</p>
+                <p class="cs-body-text">I used AI to help synthesize interview notes and identify behavioral patterns across responses, which let me move from raw qualitative data to structured insights faster without losing the nuance in individual responses.</p>
+            </div>
+
+            <div class="fs-ai-assist-note">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <div>
+                    <strong>AI-assisted synthesis</strong>
+                    <p>Interview transcripts were processed using an LLM to cluster emotional themes and friction points by workflow stage. All findings were reviewed and validated by me before informing any design decisions.</p>
+                </div>
+            </div>
+
+            <div class="fs-themes-section">
+                <h3 class="fs-themes-title">Three themes became the foundation of the product strategy:</h3>
+                
+                <div class="fs-themes-grid">
+                    <div class="fs-theme-card">
+                        <span class="fs-theme-num">01</span>
+                        <h4>People want to understand their own normal, not hit an ideal</h4>
+                        <p>Most users did not want a perfect budget. They wanted to understand their own patterns well enough to make <span class="cs-keyword-light">one realistic change at a time</span>. The goal was self-knowledge, not optimization.</p>
+                    </div>
+
+                    <div class="fs-theme-card">
+                        <span class="fs-theme-num">02</span>
+                        <h4>Behavior drives money problems, not categories</h4>
+                        <p>The real culprits were invisible: <span class="cs-keyword-light">unused subscriptions</span> running in the background, <span class="cs-keyword-light">impulse purchases</span> during stressful weeks, delivery spikes that crept up gradually. Users could not see these patterns in a category chart.</p>
+                    </div>
+
+                    <div class="fs-theme-card">
+                        <span class="fs-theme-num">03</span>
+                        <h4>People only follow through when the next step feels achievable</h4>
+                        <p>Long-term financial plans overwhelmed users immediately. But a single specific suggestion consistently led to action. <span class="cs-keyword-light">Small and concrete beat comprehensive and abstract</span> every time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fs-quote-highlight">
+                <span class="fs-quote-mark">"</span>
+                <p class="fs-quote-text">I know I spend too much. I just don't know where to start and every app I've tried just makes me feel guilty without actually helping me do anything differently.</p>
+                <span class="fs-quote-source">User interview participant</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="cs-section cs-section-dark" id="section-05">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">05</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">PRODUCT STRATEGY: GUIDANCE OVER DASHBOARDS</span>
+            </div>
+
+            <div class="cs-narrative">
+                <p class="cs-lead-text">The core strategic shift was reframing what a financial app is for. <span class="cs-keyword">Not a tracking tool. Not a reporting tool. A guidance system.</span></p>
+            </div>
+
+            <div class="fs-strategy-shift">
+                <div class="fs-strategy-old">
+                    <span class="fs-strategy-label">Instead of</span>
+                    <p>Show the user their data and let them figure out what it means</p>
+                </div>
+                <span class="material-symbols-outlined fs-strategy-arrow">arrow_forward</span>
+                <div class="fs-strategy-new">
+                    <span class="fs-strategy-label">FinSense does</span>
+                    <p>Analyze the behavior, explain the pattern in plain language, and suggest one realistic next step</p>
+                </div>
+            </div>
+
+            <div class="fs-pillars-grid">
+                <div class="fs-pillar-card">
+                    <div class="fs-pillar-icon">
+                        <span class="material-symbols-outlined">forum</span>
+                    </div>
+                    <h3>AI Spending Advisor</h3>
+                    <p>The AI narrates spending trends in plain language, the way a financially literate friend would explain them.</p>
+                    <div class="fs-pillar-example">
+                        <span class="fs-example-label">Not this:</span>
+                        <span class="fs-example-bad">"Food: 23% over budget"</span>
+                        <span class="fs-example-label">But this:</span>
+                        <span class="fs-example-good">"You spent significantly more on delivery this month, mostly on weekday evenings. That's usually a stress or tiredness pattern. Want to look at it together?"</span>
+                    </div>
+                </div>
+
+                <div class="fs-pillar-card">
+                    <div class="fs-pillar-icon">
+                        <span class="material-symbols-outlined">radar</span>
+                    </div>
+                    <h3>Behavior Detection First</h3>
+                    <p>FinSense surfaces invisible leaks: <span class="cs-keyword-light">recurring subscriptions</span> the user forgot about, <span class="cs-keyword-light">impulse spending clusters</span>, delivery spikes tied to specific times of week.</p>
+                    <p class="fs-pillar-note">These are the patterns that actually drain budgets and they are invisible in a standard category chart.</p>
+                </div>
+
+                <div class="fs-pillar-card">
+                    <div class="fs-pillar-icon">
+                        <span class="material-symbols-outlined">lightbulb</span>
+                    </div>
+                    <h3>Explanations Before Recommendations</h3>
+                    <p>Every insight follows the same structure: <span class="cs-keyword-light">here is what I noticed</span>, here is why it matters, <span class="cs-keyword-light">here is one thing you could do</span>.</p>
+                    <p class="fs-pillar-note">The explanation comes first. The suggestion comes second. This was the single design decision that had the biggest impact on user trust.</p>
+                </div>
+
+                <div class="fs-pillar-card">
+                    <div class="fs-pillar-icon">
+                        <span class="material-symbols-outlined">chat</span>
+                    </div>
+                    <h3>Chat as Primary Interface</h3>
+                    <p>Instead of navigating tabs and dashboards, users ask questions in natural language.</p>
+                    <div class="fs-pillar-questions">
+                        <span>"Why did I spend so much last month?"</span>
+                        <span>"Am I on track for my trip in July?"</span>
+                        <span>"What subscriptions am I not using?"</span>
+                    </div>
+                    <p class="fs-pillar-note">The AI answers in context, with access to the user's actual transaction data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cs-section cs-section-light" id="section-06">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">06</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">KEY DESIGN DECISIONS AND THE REASONING</span>
+            </div>
+
+            <div class="fs-decisions-grid">
+                <div class="fs-decision-card">
+                    <span class="fs-decision-num">01</span>
+                    <h3>Hybrid layout: dashboard for visibility, chat for decisions</h3>
+                    <p>A pure chat interface loses the at-a-glance awareness that makes financial tools useful day to day. A pure dashboard interface buries the guidance users actually need.</p>
+                    <p><span class="cs-keyword-light">FinSense uses both:</span> the dashboard gives users a current state view, the chat is where they go when they want to understand something or make a decision.</p>
+                    <div class="fs-decision-tradeoff">
+                        <span class="material-symbols-outlined">balance</span>
+                        <p><strong>Tradeoff:</strong> Two surfaces create a navigation challenge. I resolved this by making the chat persistently accessible from the dashboard rather than treating them as separate sections. The dashboard surfaces anomalies. The chat explains them.</p>
+                    </div>
+                </div>
+
+                <div class="fs-decision-card">
+                    <span class="fs-decision-num">02</span>
+                    <h3>Behavior-based insights instead of category totals</h3>
+                    <p>Rather than showing "dining: $340," FinSense shows "<span class="cs-keyword-light">delivery orders up 60% this month, mostly weekday evenings</span>."</p>
+                    <p>The same data, reframed around the behavior rather than the category.</p>
+                    <div class="fs-decision-tradeoff">
+                        <span class="material-symbols-outlined">engineering</span>
+                        <p>This required a different data model and close collaboration with the engineering team to define what patterns the AI would be trained to detect.</p>
+                    </div>
+                </div>
+
+                <div class="fs-decision-card">
+                    <span class="fs-decision-num">03</span>
+                    <h3>Realistic budget modeling based on actual behavior</h3>
+                    <p>Budgets in FinSense are <span class="cs-keyword-light">generated from the user's real transaction history</span>, not from generic templates.</p>
+                    <p>The AI proposes a budget that reflects what the user actually spends, then identifies one or two areas where a realistic reduction is possible. Users do not start from zero. They start from their own baseline.</p>
+                </div>
+
+                <div class="fs-decision-card">
+                    <span class="fs-decision-num">04</span>
+                    <h3>AI conversation flow design</h3>
+                    <p>Designing <span class="cs-keyword-light">what the AI says</span> was as important as designing the screens it lives in.</p>
+                    <p>I built a conversation pattern library that covered: how the AI introduces an insight, how it handles a user who pushes back, how it responds when it does not have enough data, and how it maintains a tone that is supportive without being condescending.</p>
+                    <div class="fs-decision-note">
+                        <span class="material-symbols-outlined">person</span>
+                        <p>The AI was designed to feel like a <strong>financially literate friend</strong>, not a bank chatbot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cs-section cs-section-dark" id="section-07">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">07</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">RESULTS FROM USER TESTING</span>
+            </div>
+
+            <p class="cs-intro-text">These results come from usability testing sessions conducted with participants across different financial situations and comfort levels with money management tools.</p>
+
+            <div class="fs-results-grid">
+                <div class="fs-result-card fs-result-primary">
+                    <span class="fs-result-stat">35-50%</span>
+                    <span class="fs-result-label">Reduction in budgeting stress</span>
+                    <p class="fs-result-detail">Self-reported after using FinSense for two weeks compared to their previous tool</p>
+                </div>
+
+                <div class="fs-result-card">
+                    <span class="material-symbols-outlined fs-result-icon">psychology</span>
+                    <span class="fs-result-label">Higher comprehension</span>
+                    <p class="fs-result-detail">Users understood where their money went without needing to interpret charts</p>
+                </div>
+
+                <div class="fs-result-card">
+                    <span class="material-symbols-outlined fs-result-icon">speed</span>
+                    <span class="fs-result-label">Faster decisions</span>
+                    <p class="fs-result-detail">Minutes instead of hours, because the AI surfaced the relevant context directly</p>
+                </div>
+
+                <div class="fs-result-card">
+                    <span class="material-symbols-outlined fs-result-icon">task_alt</span>
+                    <span class="fs-result-label">Increased follow-through</span>
+                    <p class="fs-result-detail">Users attributed this to recommendations feeling personalized and achievable rather than generic</p>
+                </div>
+            </div>
+
+            <div class="fs-key-findings">
+                <div class="fs-finding">
+                    <div class="fs-finding-icon">
+                        <span class="material-symbols-outlined">verified</span>
+                    </div>
+                    <div class="fs-finding-content">
+                        <h4>Trust finding</h4>
+                        <p>Users trusted the AI significantly more when it <span class="cs-keyword-light">explained the pattern before offering a suggestion</span>. This validated the explanation-first design principle and shaped the entire conversation flow architecture.</p>
+                    </div>
+                </div>
+
+                <div class="fs-finding">
+                    <div class="fs-finding-icon">
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                    <div class="fs-finding-content">
+                        <h4>Most appreciated feature</h4>
+                        <p>The <span class="cs-keyword-light">behavior detection</span> that surfaced invisible spending patterns users had not noticed themselves. This was consistently described as the moment the app felt genuinely useful rather than just another tracking tool.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cs-section cs-section-light" id="section-08">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">08</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">WHAT I LEARNED</span>
+            </div>
+
+            <div class="fs-learnings-grid">
+                <div class="fs-learning-block fs-learning-primary">
+                    <div class="fs-learning-marker"></div>
+                    <h3>AI in product design is not primarily a technical question. It is a trust question.</h3>
+                    <p>Users do not resist AI because they do not understand how it works. They resist it because <span class="cs-keyword-light">they do not trust that it understands them</span>.</p>
+                    <p>The explanation-first pattern was the most significant design decision of the project and it came directly from that insight. When the AI explained what it noticed before telling a user what to do, trust scores went up measurably in every testing round.</p>
+                    <div class="fs-learning-insight">
+                        <span class="material-symbols-outlined">lightbulb</span>
+                        <p>The AI was not more capable in those flows. It was more <strong>legible</strong>. Legibility and capability are not the same thing and in AI product design, legibility matters more.</p>
+                    </div>
+                </div>
+
+                <div class="fs-learning-block">
+                    <div class="fs-learning-marker"></div>
+                    <h3>Designing conversation flows is technically demanding in unexpected ways</h3>
+                    <p>It required thinking about edge cases the way an engineer thinks about them:</p>
+                    <ul class="fs-learning-list">
+                        <li>What does the AI say when it does not have enough data?</li>
+                        <li>What does it say when a user disagrees with its assessment?</li>
+                        <li>What does it say when the same pattern repeats for the third month in a row?</li>
+                    </ul>
+                    <p>Every one of those cases needed a <span class="cs-keyword-light">designed response</span>, not a default one.</p>
+                </div>
+
+                <div class="fs-learning-block">
+                    <div class="fs-learning-marker"></div>
+                    <h3>The feeling of being analyzed vs. being understood</h3>
+                    <p>FinSense reinforced something I now bring into every AI project: the best AI interfaces <span class="cs-keyword-light">reduce the feeling of being analyzed</span> and <span class="cs-keyword-light">increase the feeling of being understood</span>.</p>
+                    <p>Those are opposite emotional experiences and <strong>the design is what creates the difference between them</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cs-section cs-section-dark" id="final-screens">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">08</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">FINAL SCREENS</span>
+            </div>
+            
+            <div class="cs-narrative">
+                <p class="cs-lead-text">The culmination of research, iteration, and user-centered design—<span class="cs-keyword">bringing FinSense to life</span>.</p>
+            </div>
+
+            <div class="fs-final-screens-grid">
+                <div class="fs-final-screen">
+                    <img src="Assets/new assets/Finsense-screen-1.png" alt="FinSense Final Screen 1">
+                </div>
+                <div class="fs-final-screen">
+                    <img src="Assets/new assets/Finsense-screen-2.png" alt="FinSense Final Screen 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cs-cta-section">
+        <div class="cs-cta-content">
+            <h2 class="cs-cta-title">Like what you see?</h2>
+            <p class="cs-cta-subtitle">Let's build something together.</p>
+            <div class="cs-cta-buttons">
+                <a href="index.html#contact" class="cs-cta-btn cs-cta-primary">Get in touch <span class="material-symbols-outlined">arrow_forward</span></a>
+                <a href="index.html#work" class="cs-cta-btn cs-cta-secondary">View more work</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="cs-footer">
+        <div class="cs-footer-content">
+            <span class="cs-footer-copyright">© 2025 DENASOHA-NAMIKO</span>
+            <div class="cs-footer-links">
+                <a href="https://www.linkedin.com/in/denasoha-namiko-d-588a13258/">LinkedIn</a>
+                <a href="mailto:dodenasohanamiko@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
 
     <script>
-        // ===== FRAMER-STYLE ANIMATIONS =====
-        
-        // Smooth scroll progress bar
         window.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = (scrollTop / docHeight) * 100;
-            const progressBar = document.getElementById('progressBar');
-            if (progressBar) {
-                progressBar.style.width = scrollPercent + '%';
-            }
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            document.querySelector('.cs-progress-bar').style.width = progress + '%';
         });
 
-        // Main intersection observer for scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
 
-        const observer = new IntersectionObserver((entries) => {
+        const animateOnScroll = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    entry.target.classList.add('in-view');
+                if (entry.isIntersecting) { 
+                    entry.target.classList.add('is-visible');
+                    
+                    const keywords = entry.target.querySelectorAll('.cs-keyword, .cs-keyword-light');
+                    keywords.forEach((kw, index) => {
+                        setTimeout(() => {
+                            kw.classList.add('cs-keyword-active');
+                        }, 200 + (index * 100));
+                    });
+                    
+                    const highlights = entry.target.querySelectorAll('.cs-highlight, .cs-highlight-accent');
+                    highlights.forEach((h, index) => {
+                        setTimeout(() => {
+                            h.classList.add('cs-highlight-active');
+                        }, 400 + (index * 150));
+                    });
                 }
             });
         }, observerOptions);
 
-        // Observe all animatable elements
-        const animatableSelectors = [
-            '.case-section',
-            '.section-header',
-            '.section-content',
-            '.narrative-block',
-            '.problem-card',
-            '.responsibility-block',
-            '.insight-item',
-            '.strategy-pillar',
-            '.decision-card',
-            '.metric-card',
-            '.outcome-item',
-            '.reflection-card',
-            '.case-footer'
-        ];
-        
-        document.querySelectorAll(animatableSelectors.join(', ')).forEach(el => {
-            observer.observe(el);
+        document.querySelectorAll('.fs-behavior-item, .fs-ownership-card, .fs-failure-card, .fs-theme-card, .fs-pillar-card, .fs-decision-card, .fs-result-card, .fs-finding, .fs-learning-block, .cs-section-inner, .cs-narrative, .fs-final-screen').forEach(el => {
+            animateOnScroll.observe(el);
         });
-    </script>
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-text"></div>
 
-    <script>
-        // Custom Cursor - Case Study
-        const cursor = document.querySelector('.cursor');
-        const cursorText = document.querySelector('.cursor-text');
-
-        if (cursor && cursorText) {
-            let mouseX = 0;
-            let mouseY = 0;
-            let cursorX = 0;
-            let cursorY = 0;
-
-            document.addEventListener('mousemove', (e) => {
-                mouseX = e.clientX;
-                mouseY = e.clientY;
-            });
-
-            function animateCursor() {
-                const speed = 0.2;
-                cursorX += (mouseX - cursorX) * speed;
-                cursorY += (mouseY - cursorY) * speed;
-
-                cursor.style.left = cursorX + 'px';
-                cursor.style.top = cursorY + 'px';
-                cursorText.style.left = cursorX + 'px';
-                cursorText.style.top = cursorY + 'px';
-
-                requestAnimationFrame(animateCursor);
-            }
-
-            animateCursor();
-
-            document.addEventListener('mouseleave', () => {
-                cursor.style.opacity = '0';
-                cursorText.style.opacity = '0';
-            });
-
-            document.addEventListener('mouseenter', () => {
-                cursor.style.opacity = '1';
-                cursorText.style.opacity = '0';
-            });
-        }
-    </script>
-
-    <script>
-        // Page exit animation for back links
-        document.querySelectorAll('.case-nav-logo, .footer-link, .cta-link').forEach((link) => {
-            link.addEventListener('click', (event) => {
-                const href = link.getAttribute('href');
-                if (!href || href.startsWith('#')) return;
-                if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                    return;
-                }
-                event.preventDefault();
-                document.body.classList.add('page-exit');
-                setTimeout(() => {
-                    window.location.href = href;
-                }, 520);
-            });
+        window.addEventListener('load', () => {
+            document.querySelector('.cs-hero-content').style.opacity = '0';
+            document.querySelector('.cs-hero-content').style.transform = 'translateY(40px)';
+            setTimeout(() => {
+                document.querySelector('.cs-hero-content').style.transition = 'opacity 1s ease, transform 1s cubic-bezier(0.16, 1, 0.3, 1)';
+                document.querySelector('.cs-hero-content').style.opacity = '1';
+                document.querySelector('.cs-hero-content').style.transform = 'translateY(0)';
+            }, 100);
+            setTimeout(() => {
+                const heroImage = document.querySelector('.cs-hero-image');
+                heroImage.style.opacity = '0';
+                heroImage.style.transform = 'translateY(40px) scale(0.95)';
+                heroImage.style.transition = 'opacity 1s ease 0.2s, transform 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s';
+                heroImage.style.opacity = '1';
+                heroImage.style.transform = 'translateY(0) scale(1)';
+            }, 200);
         });
-    </script>
-
-    <!-- FAST DYNAMIC ANIMATIONS -->
-    <script>
-        (function() {
-            'use strict';
-            
-            // ========================================
-            // VARIED ANIMATION ASSIGNMENT
-            // ========================================
-            function assignAnimations() {
-                const imageReveals = ['reveal-image', 'reveal-image-left', 'reveal-image-right', 'reveal-image-center', 'reveal-image-diagonal', 'reveal-image-circle'];
-                document.querySelectorAll('.case-image, .case-section img:not(.card-icon):not(.column-icon)').forEach((img, i) => {
-                    if (!img.closest('.browser-mockup') && !img.closest('.phone-mockup')) {
-                        img.classList.add(imageReveals[i % imageReveals.length]);
-                    }
-                });
-                
-                const mockupReveals = ['reveal-up', 'reveal-scale', 'reveal-flip-x'];
-                document.querySelectorAll('.browser-mockup, .mockup-container').forEach((el, i) => {
-                    el.classList.add(mockupReveals[i % mockupReveals.length]);
-                });
-
-                document.querySelectorAll('.card-icon, .column-icon').forEach((el) => {
-                    el.classList.add('reveal-rotate');
-                });
-
-                const textNodes = document.querySelectorAll('.case-section h3, .case-section h4, .case-section p, .section-content > p');
-                textNodes.forEach((el, i) => {
-                    if (![...el.classList].some((c) => c.startsWith('reveal-'))) {
-                        el.classList.add('reveal-up');
-                        el.style.transitionDelay = `${i * 10}ms`;
-                    }
-                });
-
-                document.querySelectorAll('.case-section ul, .case-section ol').forEach((list) => {
-                    list.classList.add('stagger-children');
-                });
-            }
-            
-            // ========================================
-            // FAST OBSERVER
-            // ========================================
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) entry.target.classList.add('visible');
-                });
-            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
-            const selectors = [
-                '.section-header', '.summary-card', '.responsibility-card', 
-                '.problem-column', '.problem-header', '.responsibilities-header',
-                '.column-pills', '.case-image', '.browser-mockup', '.mockup-container',
-                '.card-icon', '.column-icon',
-                '.reveal-up', '.reveal-down', '.reveal-left', '.reveal-right',
-                '.reveal-scale', '.reveal-pop', '.reveal-rotate', 
-                '.reveal-flip-x', '.reveal-flip-y', '.reveal-zoom-out', '.reveal-skew',
-                '.reveal-image', '.reveal-image-left', '.reveal-image-right',
-                '.reveal-image-center', '.reveal-image-diagonal', '.reveal-image-circle',
-                '.stagger-children', '[data-reveal]'
-            ];
-
-            assignAnimations();
-            document.querySelectorAll(selectors.join(', ')).forEach(el => observer.observe(el));
-
-            const images = document.querySelectorAll('.case-section img');
-            images.forEach((img) => {
-                const show = () => img.classList.add('visible');
-                if (img.complete) {
-                    show();
-                } else {
-                    img.addEventListener('load', show, { once: true });
-                    img.addEventListener('error', show, { once: true });
-                }
-            });
-            
-            // ========================================
-            // FAST STAGGER
-            // ========================================
-            document.querySelectorAll('.stagger-children').forEach(parent => {
-                const obs = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                            Array.from(entry.target.children).forEach((child, i) => {
-                                child.style.transitionDelay = `${i * 15}ms`;
-                                child.classList.add('visible');
-                            });
-                        }
-                    });
-                }, { threshold: 0.1 });
-                obs.observe(parent);
-            });
-
-            document.querySelectorAll('.summary-cards-grid .summary-card').forEach((card, i) => {
-                card.style.transitionDelay = `${i * 15}ms`;
-            });
-            document.querySelectorAll('.responsibilities-grid .responsibility-card').forEach((card, i) => {
-                card.style.transitionDelay = `${i * 15}ms`;
-            });
-            document.querySelectorAll('.problem-columns .problem-column').forEach((col, i) => {
-                col.style.transitionDelay = `${i * 15}ms`;
-            });
-            document.querySelectorAll('.column-pills .pill').forEach((pill, i) => {
-                pill.style.transitionDelay = `${i * 10}ms`;
-            });
-            
-            // ========================================
-            // 3D CARD TILT
-            // ========================================
-            document.querySelectorAll('.summary-card, .responsibility-card').forEach(card => {
-                card.addEventListener('mousemove', (e) => {
-                    const rect = card.getBoundingClientRect();
-                    const x = (e.clientX - rect.left - rect.width / 2) / 20;
-                    const y = (e.clientY - rect.top - rect.height / 2) / 20;
-                    card.style.transform = `perspective(1000px) rotateX(${-y}deg) rotateY(${x}deg) scale(1.02)`;
-                });
-                card.addEventListener('mouseleave', () => {
-                    card.style.transform = '';
-                });
-            });
-            
-            // ========================================
-            // INIT
-            // ========================================
-            window.addEventListener('load', () => {
-                document.querySelectorAll(selectors.join(', ')).forEach(el => {
-                    const rect = el.getBoundingClientRect();
-                    if (rect.top < window.innerHeight) el.classList.add('visible');
-                });
-            });
-        })();
     </script>
 </body>
 </html>

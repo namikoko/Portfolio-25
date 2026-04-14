@@ -190,8 +190,8 @@ a, button, .project-card, .burst-center, .burst-item, .mac-folder, .nav-link, .n
     --color-accent-light: #f5f1eb;
     
     /* Typography */
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-display: 'NeutralFace', 'Inter', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-display: 'NeutralFace', 'Plus Jakarta Sans', sans-serif;
     
     /* Spacing - More generous like CORTX */
     --spacing-xs: 8px;

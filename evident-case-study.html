@@ -3,797 +3,1006 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evident Connect – Case Study</title>
+    <title>Evident Connect Case Study | DENASOHA-NAMIKO</title>
     <link rel="icon" type="image/png" href="Assets/fonts/favicon.png">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="case-study.css">
     <link rel="stylesheet" href="evident-case-study.css">
-    <link rel="preload" href="Assets/fonts/NeutralFace.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
+
     <!-- Navigation -->
-    <nav class="case-nav">
-    <a href="index.html#projects" class="case-nav-logo">← back</a>
-        <div class="case-nav-progress">
-            <div class="progress-bar" id="progressBar"></div>
+    <nav class="cs-nav">
+        <a href="index.html" class="cs-nav-back">
+            <span class="material-symbols-outlined">arrow_back</span>
+            Back
+        </a>
+        <div class="cs-nav-progress">
+            <div class="cs-progress-bar"></div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="case-hero evident-hero">
-        <!-- Background Text -->
-        <h1 class="hero-background-text evident-title">EVIDENT</h1>
-        
-        <!-- Metadata -->
-        <div class="hero-metadata hero-metadata-top-left">Industrial Inspection Data Platform</div>
-        <div class="hero-metadata hero-metadata-top-right">2022-2023</div>
-        <div class="hero-metadata hero-metadata-bottom-left">Product Redesign Project</div>
-        <div class="hero-metadata hero-metadata-bottom-right">Case Study</div>
-        
-        <!-- Phone Mockup (centered) -->
-        <div class="hero-center">
-            <img src="Assets/Photos/EVDT.svg" alt="Evident Connect Interface" class="phone-mockup">
+    <!-- Hero Section - Light -->
+    <section class="cs-hero">
+        <div class="cs-hero-content">
+            <div class="cs-hero-meta">
+                <span class="cs-badge">Case Study</span>
+                <span class="cs-year">2022 - 2023</span>
+            </div>
+            <h1 class="cs-hero-title">EVIDENT CONNECT: Industrial Inspection Data Platform</h1>
+            <p class="cs-hero-subtitle">Redesigning a legacy data transfer tool for NDT engineers working in high-pressure, safety-critical environments.</p>
+            
+            <div class="cs-hero-details">
+                <div class="cs-detail">
+                    <span class="cs-detail-label">Role</span>
+                    <span class="cs-detail-value">Lead UI/UX Designer</span>
+                </div>
+                <div class="cs-detail">
+                    <span class="cs-detail-label">Timeline</span>
+                    <span class="cs-detail-value">3 months</span>
+                </div>
+                <div class="cs-detail">
+                    <span class="cs-detail-label">Platform</span>
+                    <span class="cs-detail-value">Mobile-first redesign (iOS)</span>
+                </div>
+                <div class="cs-detail">
+                    <span class="cs-detail-label">Domain</span>
+                    <span class="cs-detail-value">Industrial NDT, Field Engineering</span>
+                </div>
+            </div>
+        </div>
+        <div class="cs-hero-image">
+            <img src="Assets/Photos/EVDT.svg" alt="Evident Connect Final Design" class="cs-hero-phone">
+        </div>
+        <div class="cs-scroll-indicator">
+            <div class="cs-scroll-line"></div>
         </div>
     </section>
 
-    <!-- Content Sections -->
-    <div class="case-content-wrapper">
-        <!-- Section 01: Executive Summary -->
-        <section class="case-section" id="section-01">
-            <div class="section-header">
-                <span class="section-number">01</span>
-                <h2 class="section-title">Executive Summary</h2>
-                <p class="section-subtitle">A modern foundation for safety-critical data workflows.</p>
+    <!-- Section 01 - Dark -->
+    <section class="cs-section cs-section-dark" id="section-01">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">01</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">WHAT EVIDENT CONNECT IS AND WHY IT MATTERS</span>
             </div>
-            <div class="section-content">
-                <div class="executive-grid">
-                    <div class="executive-main">
-                        <p class="executive-lead">NDT teams rely on fast, accurate data transfer. The previous Evident Connect app felt <em>outdated</em>, <em>cluttered</em>, and too complex for engineers working in high-pressure environments.</p>
-                        <p class="executive-body">I led the product redesign across research, IA, UX, and interface modernization—shifting the platform toward a cleaner, mobile-first experience engineers could trust.</p>
-                    </div>
-                    <div class="executive-sidebar">
-                        <div class="sidebar-block">
-                            <span class="sidebar-label">Role</span>
-                            <span class="sidebar-value">Lead Product Designer</span>
-                        </div>
-                        <div class="sidebar-block">
-                            <span class="sidebar-label">Timeline</span>
-                            <span class="sidebar-value">3 Months</span>
-                        </div>
-                        <div class="sidebar-block">
-                            <span class="sidebar-label">Scope</span>
-                            <span class="sidebar-value">Research, Information Architecture, UX Design, and UI Design</span>
-                        </div>
-                        <div class="sidebar-block">
-                            <span class="sidebar-label">Platform</span>
-                            <span class="sidebar-value">Mobile-First Redesign</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="executive-focus">
-                    <div class="focus-item">
-                        <div class="focus-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <circle cx="11" cy="11" r="8"/>
-                                <path d="m21 21-4.35-4.35"/>
-                            </svg>
-                        </div>
-                        <div class="focus-text">
-                            <span class="focus-label">Research</span>
-                            <span class="focus-desc">Field studies with NDT engineers</span>
-                        </div>
-                    </div>
-                    <div class="focus-item">
-                        <div class="focus-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="3" y="3" width="7" height="7"/>
-                                <rect x="14" y="3" width="7" height="7"/>
-                                <rect x="14" y="14" width="7" height="7"/>
-                                <rect x="3" y="14" width="7" height="7"/>
-                            </svg>
-                        </div>
-                        <div class="focus-text">
-                            <span class="focus-label">Information Architecture</span>
-                            <span class="focus-desc">Restructured navigation & hierarchy</span>
-                        </div>
-                    </div>
-                    <div class="focus-item">
-                        <div class="focus-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
-                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
-                                <path d="M2 2l7.586 7.586"/>
-                                <circle cx="11" cy="11" r="2"/>
-                            </svg>
-                        </div>
-                        <div class="focus-text">
-                            <span class="focus-label">Interface Design</span>
-                            <span class="focus-desc">Modern, mobile-first UI system</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="section-footer">The redesign established a stronger, clearer foundation for a high-risk, high-precision workflow.</p>
+            
+            <div class="cs-narrative">
+                <p class="cs-lead-text">Evident Connect is the companion app for <span class="cs-keyword">non-destructive testing equipment</span>.</p>
+                <p class="cs-body-text">NDT engineers use it to <span class="cs-highlight">upload, export, and transfer inspection data</span> from machines like Flaw Detectors, Ultrasonic Detectors, Eddy Current Array Detectors, and various Olympus NDT inspection scanners.</p>
             </div>
-        </section>
 
-        <!-- Section 02: The Problem -->
-        <section class="case-section" id="section-02">
-            <div class="section-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title">The Problem</h2>
-                <p class="section-subtitle">A legacy experience slowing down mission-critical work.</p>
-            </div>
-            <div class="section-content">
-                <p class="problem-intro">Engineers still relied on USB drives, slow mobile workflows, shared folders, and interfaces that demanded unnecessary effort.</p>
-                
-                <div class="issue-list">
-                    <div class="issue-item">
-                        <div class="issue-number">01</div>
-                        <div class="issue-content">
-                            <h4>Outdated Layout</h4>
-                            <p>Mismatched UI components created visual inconsistency</p>
-                        </div>
-                        <div class="issue-severity high"></div>
-                    </div>
-                    <div class="issue-item">
-                        <div class="issue-number">02</div>
-                        <div class="issue-content">
-                            <h4>Conflicting Navigation</h4>
-                            <p>Two navigation menus competing for attention</p>
-                        </div>
-                        <div class="issue-severity high"></div>
-                    </div>
-                    <div class="issue-item">
-                        <div class="issue-number">03</div>
-                        <div class="issue-content">
-                            <h4>Poor Touch Targets</h4>
-                            <p>Tiny targets caused slow, error-prone interactions</p>
-                        </div>
-                        <div class="issue-severity medium"></div>
-                    </div>
-                    <div class="issue-item">
-                        <div class="issue-number">04</div>
-                        <div class="issue-content">
-                            <h4>Cluttered Workspaces</h4>
-                            <p>Shared files showing irrelevant content</p>
-                        </div>
-                        <div class="issue-severity medium"></div>
-                    </div>
-                    <div class="issue-item">
-                        <div class="issue-number">05</div>
-                        <div class="issue-content">
-                            <h4>Workflow Mismatch</h4>
-                            <p>Did not align with real-world engineering needs</p>
-                        </div>
-                        <div class="issue-severity high"></div>
+            <!-- Industry Slider - Dynamic Component -->
+            <div class="ev-industry-slider">
+                <div class="ev-slider-header">
+                    <h3 class="ev-slider-title">Where it's used: high-stakes environments</h3>
+                    <div class="ev-slider-controls">
+                        <button class="ev-slider-btn ev-slider-prev" aria-label="Previous">
+                            <span class="material-symbols-outlined">arrow_back</span>
+                        </button>
+                        <button class="ev-slider-btn ev-slider-next" aria-label="Next">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
                     </div>
                 </div>
-                
-                <p class="section-footer">The core issue was not technology limitations but poor alignment with how engineers actually work.</p>
+                <div class="ev-slider-track-container">
+                    <div class="ev-slider-track">
+                        <div class="ev-slide">
+                            <div class="ev-slide-icon">
+                                <span class="material-symbols-outlined">oil_barrel</span>
+                            </div>
+                            <h4>Oil & Gas</h4>
+                            <p>Pipeline integrity checks and oil spill prevention inspections</p>
+                        </div>
+                        <div class="ev-slide">
+                            <div class="ev-slide-icon">
+                                <span class="material-symbols-outlined">flight</span>
+                            </div>
+                            <h4>Aerospace</h4>
+                            <p>Aircraft safety assessments and structural integrity testing</p>
+                        </div>
+                        <div class="ev-slide">
+                            <div class="ev-slide-icon">
+                                <span class="material-symbols-outlined">wind_power</span>
+                            </div>
+                            <h4>Wind Energy</h4>
+                            <p>Turbine blade inspections and tower structural analysis</p>
+                        </div>
+                        <div class="ev-slide">
+                            <div class="ev-slide-icon">
+                                <span class="material-symbols-outlined">factory</span>
+                            </div>
+                            <h4>Manufacturing</h4>
+                            <p>Quality control and weld inspection processes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ev-slider-dots">
+                    <button class="ev-slider-dot active" data-slide="0"></button>
+                    <button class="ev-slider-dot" data-slide="1"></button>
+                    <button class="ev-slider-dot" data-slide="2"></button>
+                    <button class="ev-slider-dot" data-slide="3"></button>
+                </div>
             </div>
-        </section>
 
-        <!-- Section 03: Goals -->
-        <section class="case-section" id="section-03">
-            <div class="section-header">
-                <span class="section-number">03</span>
-                <h2 class="section-title">What We Wanted To Achieve</h2>
-                <p class="section-subtitle">Make data handling fast, intuitive, and trustworthy.</p>
-            </div>
-            <div class="section-content">
-                <div class="goals-grid">
-                    <div class="goal-card">
-                        <div class="goal-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
-                            </svg>
-                        </div>
-                        <h3>Modern Interface</h3>
-                        <p>Move away from outdated patterns into a clean, contemporary design language</p>
-                    </div>
-                    <div class="goal-card">
-                        <div class="goal-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M3 6h18M3 12h12M3 18h6"/>
-                            </svg>
-                        </div>
-                        <h3>Simplified Browsing</h3>
-                        <p>Remove unnecessary complexity in file browsing and sorting workflows</p>
-                    </div>
-                    <div class="goal-card">
-                        <div class="goal-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <circle cx="12" cy="8" r="4"/>
-                                <path d="M4 20c0-4 4-6 8-6s8 2 8 6"/>
-                            </svg>
-                        </div>
-                        <h3>Personalized Workspaces</h3>
-                        <p>Create role-specific views instead of one-size-fits-all layouts</p>
-                    </div>
-                    <div class="goal-card">
-                        <div class="goal-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="5" y="2" width="14" height="20" rx="2"/>
-                                <line x1="12" y1="18" x2="12" y2="18.01" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <h3>Mobile-Native</h3>
-                        <p>Ensure every interaction works naturally on mobile devices</p>
-                    </div>
+            <!-- Warning Callout -->
+            <div class="ev-warning-callout">
+                <div class="ev-callout-glow"></div>
+                <div class="ev-callout-icon">
+                    <span class="material-symbols-outlined">warning</span>
                 </div>
-                <p class="section-footer">The goal was to give engineers a workspace that supports their expertise instead of slowing it down.</p>
+                <div class="ev-callout-content">
+                    <p class="ev-callout-title">These are not low-stakes environments.</p>
+                    <p class="ev-callout-text">Before Evident Connect existed, the industry standard was transferring critical inspection data via <span class="cs-keyword">USB keys</span>, a method that could <span class="cs-highlight">delay results by days</span> and posed <span class="cs-highlight-accent">serious data security risks</span>.</p>
+                </div>
             </div>
-        </section>
 
-        <!-- Section 04: What Was Not Working -->
-        <section class="case-section" id="section-04">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2 class="section-title">What Was Not Working</h2>
-                <p class="section-subtitle">User pain points blocking clarity and speed.</p>
-            </div>
-            <div class="section-content">
-                <div class="blockers-grid">
-                    <div class="blocker-card blocker-main">
-                        <div class="blocker-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <circle cx="12" cy="12" r="10"/>
-                                <path d="M15 9l-6 6M9 9l6 6"/>
-                            </svg>
-                        </div>
-                        <div class="blocker-info">
-                            <h4>Outdated UI</h4>
-                            <p>Created friction at every step of the workflow</p>
-                        </div>
-                        <div class="blocker-tag">Critical Blocker</div>
-                    </div>
-                    <div class="blocker-card">
-                        <div class="blocker-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                            </svg>
-                        </div>
-                        <h4>Complex Workflows</h4>
-                        <p>Increased mental load during critical tasks</p>
-                        <div class="blocker-tag">High Impact</div>
-                    </div>
-                    <div class="blocker-card">
-                        <div class="blocker-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                <circle cx="9" cy="7" r="4"/>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                            </svg>
-                        </div>
-                        <h4>Shared Workspaces</h4>
-                        <p>Made it difficult to stay organized and focused</p>
-                        <div class="blocker-tag">Medium Impact</div>
-                    </div>
-                </div>
-                <p class="section-footer">These issues created unnecessary drag in environments where time and accuracy are critical.</p>
-            </div>
-        </section>
-
-        <!-- Section 05: Research Insights -->
-        <section class="case-section" id="section-05">
-            <div class="section-header">
-                <span class="section-number">05</span>
-                <h2 class="section-title">Research Insights</h2>
-                <p class="section-subtitle">Field-driven design shaped by real engineering workflows.</p>
-            </div>
-            <div class="section-content">
-                <p class="research-intro">To guide decisions, I conducted focused sessions with engineers across multiple industries. Three insights stood out:</p>
-                
-                <div class="insights-showcase">
-                    <div class="insight-card-large">
-                        <div class="insight-quote">"We don't need more features. We need less noise."</div>
-                        <div class="insight-detail">
-                            <span class="insight-tag">Insight 01</span>
-                            <h4>Minimal Interfaces</h4>
-                            <p>Engineers want minimal interfaces because their work is already demanding. Every extra element competes for attention they can't spare.</p>
-                        </div>
-                    </div>
-                    <div class="insight-row">
-                        <div class="insight-card-small">
-                            <span class="insight-tag">Insight 02</span>
-                            <h4>Personalization Required</h4>
-                            <p>Shared workspaces cause confusion and require personalization. Different roles need different views of the same data.</p>
-                        </div>
-                        <div class="insight-card-small">
-                            <span class="insight-tag">Insight 03</span>
-                            <h4>Mobile Constraints</h4>
-                            <p>Mobile interactions must accommodate limited precision and fast movement. Touch targets matter more than aesthetics.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <p class="section-footer">Research confirmed that simplicity, clarity, and personalization were not preferences but essential requirements.</p>
-            </div>
-        </section>
-
-        <!-- Section 06: Design Decisions -->
-        <section class="case-section" id="section-06">
-            <div class="section-header">
-                <span class="section-number">06</span>
-                <h2 class="section-title">Design Decisions</h2>
-                <p class="section-subtitle">Reducing cognitive load and restoring control.</p>
-            </div>
-            <div class="section-content">
-                <div class="decisions-list">
-                    <div class="decision-item">
-                        <div class="decision-marker"></div>
-                        <div class="decision-content">
-                            <h4>Simplicity First</h4>
-                            <p>Reduce visual noise and decision fatigue at every touchpoint</p>
-                        </div>
-                    </div>
-                    <div class="decision-item">
-                        <div class="decision-marker"></div>
-                        <div class="decision-content">
-                            <h4>Personalized Workspaces</h4>
-                            <p>Replace shared environments with role-specific views</p>
-                        </div>
-                    </div>
-                    <div class="decision-item">
-                        <div class="decision-marker"></div>
-                        <div class="decision-content">
-                            <h4>Clearer Document Hierarchy</h4>
-                            <p>Highlight what matters most through visual weight and spacing</p>
-                        </div>
-                    </div>
-                    <div class="decision-item">
-                        <div class="decision-marker"></div>
-                        <div class="decision-content">
-                            <h4>Direct Sorting</h4>
-                            <p>Replace complicated filtering with simple, direct controls</p>
-                        </div>
-                    </div>
-                    <div class="decision-item">
-                        <div class="decision-marker"></div>
-                        <div class="decision-content">
-                            <h4>Unified Navigation</h4>
-                            <p>Create a consistent path through the entire application</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="section-footer">Every choice served the same goal: reduce friction and help engineers focus on their actual work.</p>
-            </div>
-        </section>
-
-        <!-- Section 07: Updated Interface -->
-        <section class="case-section" id="section-07">
-            <div class="section-header">
-                <span class="section-number">07</span>
-                <h2 class="section-title">Updated Interface</h2>
-                <p class="section-subtitle">A modern, mobile-first environment built for clarity.</p>
-            </div>
-            <div class="section-content">
-                <div class="interface-features">
-                    <div class="feature-highlight">
-                        <div class="feature-icon-large">
-                            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                <path d="M3 9h18"/>
-                                <path d="M9 21V9"/>
-                            </svg>
-                        </div>
-                        <h3>Larger Touch Targets</h3>
-                        <p>Fast, confident interactions even in challenging field conditions</p>
-                    </div>
-                    <div class="feature-grid">
-                        <div class="feature-item">
-                            <span class="feature-num">01</span>
-                            <p>Clean "Recently Viewed" surface for instant work resumption</p>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-num">02</span>
-                            <p>Improved spacing and hierarchy for folder clarity</p>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-num">03</span>
-                            <p>Simplified lists and metadata for quicker scanning</p>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-num">04</span>
-                            <p>Calmer visual structure directing attention to content</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Interface Screenshot -->
-                <div class="interface-showcase">
-                    <img src="Assets/Photos/Evdt-cover.svg" alt="Evident Connect Interface Redesign" class="interface-image case-image visible" data-reveal onerror="this.onerror=null;this.src='Assets/Photos/Evident cover.svg';">
-                </div>
-                
-                <p class="section-footer">The interface was rebuilt to feel focused, usable, and aligned with the urgency of NDT tasks.</p>
-            </div>
-        </section>
-
-        <!-- Section 08: Reflections -->
-        <section class="case-section" id="section-08">
-            <div class="section-header">
-                <span class="section-number">08</span>
-                <h2 class="section-title">Reflections On The Redesign</h2>
-                <p class="section-subtitle">Small changes that dramatically improved confidence.</p>
-            </div>
-            <div class="section-content">
-                <div class="reflections-grid">
-                    <div class="reflection-highlight">
-                        <div class="reflection-icon">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M12 3v18M3 12h18"/>
-                            </svg>
-                        </div>
-                        <h4>Quieter Visual Style</h4>
-                        <p>Brought focus back to the content by removing visual competition</p>
-                    </div>
-                    <div class="reflection-highlight">
-                        <div class="reflection-icon">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="3" y="4" width="18" height="16" rx="2"/>
-                                <path d="M7 8h10M7 12h6"/>
-                            </svg>
-                        </div>
-                        <h4>Simplified List Views</h4>
-                        <p>Made mobile interactions more natural and less error-prone</p>
-                    </div>
-                    <div class="reflection-highlight">
-                        <div class="reflection-icon">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <circle cx="12" cy="12" r="10"/>
-                                <path d="M12 6v6l4 2"/>
-                            </svg>
-                        </div>
-                        <h4>Icon Hierarchy</h4>
-                        <p>Made navigation unmistakably clear through visual weight</p>
-                    </div>
-                </div>
-                <p class="section-footer">These refinements transformed the experience into something reliable and intuitive under pressure.</p>
-            </div>
-        </section>
-
-        <!-- Section 09: Final Outcome -->
-        <section class="case-section" id="section-09">
-            <div class="section-header">
-                <span class="section-number">09</span>
-                <h2 class="section-title">Final Outcome</h2>
-                <p class="section-subtitle">A platform engineers can trust to handle sensitive work.</p>
-            </div>
-            <div class="section-content">
-                <div class="outcomes-showcase">
-                    <div class="outcome-block">
-                        <div class="outcome-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                            </svg>
-                        </div>
-                        <div class="outcome-text">
-                            <strong>Faster</strong> and more confident decision-making
-                        </div>
-                    </div>
-                    <div class="outcome-block">
-                        <div class="outcome-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="5" y="2" width="14" height="20" rx="2"/>
-                                <line x1="12" y1="18" x2="12" y2="18.01" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <div class="outcome-text">
-                            <strong>Cleaner</strong> and more intuitive mobile workflow
-                        </div>
-                    </div>
-                    <div class="outcome-block">
-                        <div class="outcome-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            </svg>
-                        </div>
-                        <div class="outcome-text">
-                            <strong>Stronger trust</strong> through better clarity and hierarchy
-                        </div>
-                    </div>
-                    <div class="outcome-block">
-                        <div class="outcome-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                <path d="M3 9h18M9 21V9"/>
-                            </svg>
-                        </div>
-                        <div class="outcome-text">
-                            <strong>Modern UI</strong> that respects NDT environments
-                        </div>
-                    </div>
-                </div>
-                <p class="section-footer">By simplifying the experience, we strengthened both accuracy and user confidence.</p>
-            </div>
-        </section>
-
-        <!-- Section 10: Closing Reflection -->
-        <section class="case-section closing-section" id="section-10">
-            <div class="section-header">
-                <span class="section-number">10</span>
-                <h2 class="section-title">Closing Reflection</h2>
-                <p class="section-subtitle">Designing for environments where precision matters.</p>
-            </div>
-            <div class="section-content">
-                <div class="closing-statement">
-                    <p class="closing-lead">Modernizing an enterprise workflow requires listening deeply to the people who rely on it.</p>
-                    <p class="closing-body">Engineers do not need extra features or visual noise. They need <em>clarity</em>, <em>speed</em>, and interfaces that support their expertise.</p>
-                </div>
-                <p class="section-footer closing-footer">Good enterprise design becomes invisible. Evident Connect moved much closer to that ideal.</p>
-            </div>
-        </section>
-    </div>
-
-    <!-- Footer CTA -->
-    <section class="case-footer">
-        <div class="footer-content">
-            <h2>Ready for the next project?</h2>
-            <a href="index.html#projects" class="footer-link">← Back to portfolio</a>
+            <blockquote class="cs-quote">
+                <span class="cs-quote-icon">"</span>
+                <p>The app existed to modernize this. But the interface itself had become <span class="cs-quote-highlight">a barrier to the very efficiency</span> it was meant to create.</p>
+            </blockquote>
         </div>
     </section>
+
+    <!-- Section 02 - Light -->
+    <section class="cs-section cs-section-light" id="section-02">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">02</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">WHAT I OWNED</span>
+            </div>
+
+            <!-- Tabbed Interface - Dynamic Component -->
+            <div class="ev-tabs-container">
+                <div class="ev-tabs-nav">
+                    <button class="ev-tab-btn active" data-tab="research">
+                        <span class="material-symbols-outlined">search</span>
+                        <span class="ev-tab-label">Research</span>
+                    </button>
+                    <button class="ev-tab-btn" data-tab="ia">
+                        <span class="material-symbols-outlined">account_tree</span>
+                        <span class="ev-tab-label">Information Architecture</span>
+                    </button>
+                    <button class="ev-tab-btn" data-tab="interaction">
+                        <span class="material-symbols-outlined">touch_app</span>
+                        <span class="ev-tab-label">Interaction Design</span>
+                    </button>
+                    <button class="ev-tab-btn" data-tab="ui">
+                        <span class="material-symbols-outlined">palette</span>
+                        <span class="ev-tab-label">UI Design</span>
+                    </button>
+                </div>
+                <div class="ev-tabs-content">
+                    <div class="ev-tab-panel active" id="tab-research">
+                        <ul class="ev-tab-list">
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">groups</span></span>
+                                <span class="ev-list-text">Field studies with NDT engineers</span>
+                            </li>
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">record_voice_over</span></span>
+                                <span class="ev-list-text">User interviews</span>
+                            </li>
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">science</span></span>
+                                <span class="ev-list-text">Usability testing</span>
+                            </li>
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">analytics</span></span>
+                                <span class="ev-list-text">Pain point synthesis</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ev-tab-panel" id="tab-ia">
+                        <ul class="ev-tab-list">
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">menu</span></span>
+                                <span class="ev-list-text">Navigation restructure</span>
+                            </li>
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">person</span></span>
+                                <span class="ev-list-text">Role-based workspace model</span>
+                            </li>
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">folder_open</span></span>
+                                <span class="ev-list-text">Document hierarchy redesign</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ev-tab-panel" id="tab-interaction">
+                        <ul class="ev-tab-list">
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">ads_click</span></span>
+                                <span class="ev-list-text">Touch target system</span>
+                            </li>
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">folder_copy</span></span>
+                                <span class="ev-list-text">File browsing and sorting</span>
+                            </li>
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">dashboard_customize</span></span>
+                                <span class="ev-list-text">Workspace personalization</span>
+                            </li>
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">view_list</span></span>
+                                <span class="ev-list-text">List view redesign</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ev-tab-panel" id="tab-ui">
+                        <ul class="ev-tab-list">
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">brush</span></span>
+                                <span class="ev-list-text">Visual language refresh</span>
+                            </li>
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">interests</span></span>
+                                <span class="ev-list-text">Icon system</span>
+                            </li>
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">smartphone</span></span>
+                                <span class="ev-list-text">Mobile-first component set</span>
+                            </li>
+                            <li>
+                                <span class="ev-list-icon"><span class="material-symbols-outlined">route</span></span>
+                                <span class="ev-list-text">Simplified navigation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 03 - Dark -->
+    <section class="cs-section cs-section-dark" id="section-03">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">03</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">THE PROBLEMS COMPOUNDING EACH OTHER</span>
+            </div>
+
+            <p class="cs-intro-text">The issues were not isolated bugs. They <span class="cs-keyword">reinforced each other</span>. A cluttered workspace made navigation harder. Competing navigation menus made the cluttered workspace worse.</p>
+
+            <!-- Accordion - Dynamic Component -->
+            <div class="ev-accordion">
+                <div class="ev-accordion-item open" data-severity="critical">
+                    <button class="ev-accordion-header">
+                        <div class="ev-accordion-title-group">
+                            <span class="ev-severity-badge critical">Critical</span>
+                            <h3 class="ev-accordion-title">Two competing hamburger menus</h3>
+                        </div>
+                        <span class="material-symbols-outlined ev-accordion-icon">expand_more</span>
+                    </button>
+                    <div class="ev-accordion-content">
+                        <p>Engineers had to <span class="cs-highlight">decide which menu to use</span> before starting any task. The app had two hamburger menus simultaneously, creating <span class="cs-keyword">immediate confusion</span> about where anything lived.</p>
+                    </div>
+                </div>
+
+                <div class="ev-accordion-item" data-severity="critical">
+                    <button class="ev-accordion-header">
+                        <div class="ev-accordion-title-group">
+                            <span class="ev-severity-badge critical">Critical</span>
+                            <h3 class="ev-accordion-title">Touch targets too small for field use</h3>
+                        </div>
+                        <span class="material-symbols-outlined ev-accordion-icon">expand_more</span>
+                    </button>
+                    <div class="ev-accordion-content">
+                        <p>Engineers use this app on-site, often under <span class="cs-highlight">time pressure</span>, sometimes in <span class="cs-highlight">poor lighting</span> or <span class="cs-highlight-accent">wearing gloves</span>. Tiny tap targets caused repeated mis-taps and slowed down every single interaction.</p>
+                    </div>
+                </div>
+
+                <div class="ev-accordion-item" data-severity="high">
+                    <button class="ev-accordion-header">
+                        <div class="ev-accordion-title-group">
+                            <span class="ev-severity-badge high">High Impact</span>
+                            <h3 class="ev-accordion-title">Shared workspaces showing irrelevant content</h3>
+                        </div>
+                        <span class="material-symbols-outlined ev-accordion-icon">expand_more</span>
+                    </button>
+                    <div class="ev-accordion-content">
+                        <p>All users in a company saw all files by default. Engineers had to <span class="cs-keyword">manually filter through content</span> that had nothing to do with their project or role before finding what they needed.</p>
+                    </div>
+                </div>
+
+                <div class="ev-accordion-item" data-severity="high">
+                    <button class="ev-accordion-header">
+                        <div class="ev-accordion-title-group">
+                            <span class="ev-severity-badge high">High Impact</span>
+                            <h3 class="ev-accordion-title">Interface not built around real workflows</h3>
+                        </div>
+                        <span class="material-symbols-outlined ev-accordion-icon">expand_more</span>
+                    </button>
+                    <div class="ev-accordion-content">
+                        <p>The design did not reflect real NDT workflows. Checkboxes cluttered list views. Folder icons appeared on non-folder items. Document details were surfaced at the wrong moments. The app demanded <span class="cs-highlight-accent">engineers adapt to it</span> rather than the other way around.</p>
+                    </div>
+                </div>
+
+                <div class="ev-accordion-item" data-severity="high">
+                    <button class="ev-accordion-header">
+                        <div class="ev-accordion-title-group">
+                            <span class="ev-severity-badge high">High Impact</span>
+                            <h3 class="ev-accordion-title">Outdated visual design creating friction</h3>
+                        </div>
+                        <span class="material-symbols-outlined ev-accordion-icon">expand_more</span>
+                    </button>
+                    <div class="ev-accordion-content">
+                        <p>Mismatched UI components, a visually dominant hero image that competed with the actual content, and an overall aesthetic that felt <span class="cs-keyword">foreign to the device</span> it was running on all added unnecessary cognitive load.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 04 - Light -->
+    <section class="cs-section cs-section-light" id="section-04">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">04</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">RESEARCH: WHAT ENGINEERS WERE ACTUALLY TELLING US</span>
+            </div>
+
+            <p class="cs-intro-text">I conducted focused sessions with NDT engineers across multiple industries including <span class="cs-keyword-light">oil and gas</span> and <span class="cs-keyword-light">aerospace</span>. Rather than a controlled lab setting, I observed them using the existing app during real inspection workflows.</p>
+
+            <!-- AI Method Badge -->
+            <div class="ev-method-badge">
+                <div class="ev-method-icon">
+                    <span class="material-symbols-outlined">psychology</span>
+                </div>
+                <div class="ev-method-content">
+                    <span class="ev-method-label">AI-Assisted Research</span>
+                    <p>With a 3-month timeline and no dedicated research team, I used AI to help cluster and surface patterns across session notes and open-ended feedback. This freed up time I could spend <span class="cs-highlight">in the field with engineers</span> rather than at my desk doing manual synthesis.</p>
+                </div>
+            </div>
+
+            <p class="ev-method-note">Session notes and interview responses were processed using an LLM to identify recurring themes and flag outlier responses. All findings were reviewed and validated by me before informing any design decisions.</p>
+
+            <!-- Quote Carousel - Dynamic Component -->
+            <div class="ev-quote-carousel">
+                <div class="ev-carousel-header">
+                    <h3>Real quotes from engineer interviews</h3>
+                    <div class="ev-carousel-controls">
+                        <button class="ev-carousel-prev" aria-label="Previous quote">
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </button>
+                        <button class="ev-carousel-next" aria-label="Next quote">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="ev-carousel-container">
+                    <div class="ev-carousel-track">
+                        <div class="ev-quote-card active">
+                            <span class="ev-quote-mark">"</span>
+                            <p class="ev-quote-text">The earlier design was a bit <span class="ev-quote-keyword">clunky</span> and <span class="ev-quote-keyword">not intuitive</span>.</p>
+                            <span class="ev-quote-source">NDT Engineer</span>
+                        </div>
+                        <div class="ev-quote-card">
+                            <span class="ev-quote-mark">"</span>
+                            <p class="ev-quote-text">Before Evident Connect, we mostly used <span class="ev-quote-keyword">USBs</span>, which was <span class="ev-quote-keyword">time-consuming</span>.</p>
+                            <span class="ev-quote-source">NDT Engineer</span>
+                        </div>
+                        <div class="ev-quote-card">
+                            <span class="ev-quote-mark">"</span>
+                            <p class="ev-quote-text">A shared workspace was confusing. Having a <span class="ev-quote-keyword">personalized space</span> feels more organized.</p>
+                            <span class="ev-quote-source">NDT Engineer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ev-carousel-dots">
+                    <button class="ev-carousel-dot active" data-slide="0"></button>
+                    <button class="ev-carousel-dot" data-slide="1"></button>
+                    <button class="ev-carousel-dot" data-slide="2"></button>
+                </div>
+            </div>
+
+            <!-- Insights - Flip Cards -->
+            <h3 class="ev-section-subhead">Three insights shaped every decision that followed</h3>
+            <div class="ev-insights-grid">
+                <div class="ev-insight-card" data-insight="1">
+                    <div class="ev-insight-front">
+                        <span class="ev-insight-num">01</span>
+                        <h4>Engineers want less, not more</h4>
+                        <span class="ev-insight-hint">
+                            <span class="material-symbols-outlined">touch_app</span>
+                            Tap to reveal
+                        </span>
+                    </div>
+                    <div class="ev-insight-back">
+                        <p>Every extra element on screen competes for attention they <span class="cs-keyword-light">cannot spare</span> during an active inspection. The work is already demanding. The interface should not add to that load.</p>
+                    </div>
+                </div>
+                <div class="ev-insight-card" data-insight="2">
+                    <div class="ev-insight-front">
+                        <span class="ev-insight-num">02</span>
+                        <h4>Different roles need different views</h4>
+                        <span class="ev-insight-hint">
+                            <span class="material-symbols-outlined">touch_app</span>
+                            Tap to reveal
+                        </span>
+                    </div>
+                    <div class="ev-insight-back">
+                        <p>A field technician and a project supervisor are looking at the same files but need <span class="cs-keyword-light">completely different views</span>. A one-size-fits-all workspace meant neither group felt the app was built for them.</p>
+                    </div>
+                </div>
+                <div class="ev-insight-card" data-insight="3">
+                    <div class="ev-insight-front">
+                        <span class="ev-insight-num">03</span>
+                        <h4>Mobile constraints are non-negotiable</h4>
+                        <span class="ev-insight-hint">
+                            <span class="material-symbols-outlined">touch_app</span>
+                            Tap to reveal
+                        </span>
+                    </div>
+                    <div class="ev-insight-back">
+                        <p>Touch had to be the <span class="cs-keyword-light">primary design constraint</span>. Interactions designed for a mouse and keyboard failed completely in field conditions. This was not a secondary consideration; it was the foundation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 05 - Dark -->
+    <section class="cs-section cs-section-dark" id="section-05">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">05</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">KEY DESIGN DECISIONS AND THE REASONING BEHIND THEM</span>
+            </div>
+
+            <!-- Decision Timeline - Dynamic Component -->
+            <div class="ev-decisions-timeline">
+                <div class="ev-decision-card">
+                    <div class="ev-decision-marker">
+                        <span class="ev-decision-num">01</span>
+                    </div>
+                    <div class="ev-decision-content">
+                        <h3 class="ev-decision-title">Unified navigation: one menu instead of two</h3>
+                        <p>I consolidated the two competing hamburger menus into a <span class="cs-highlight">single navigation system</span>. The company logo and user profile were moved inside the single burger menu, clearing the main interface of competing chrome.</p>
+                        <p>I considered a bottom tab bar but the existing user mental model was already built around the hamburger pattern, so <span class="cs-keyword">consolidating rather than replacing</span> reduced the learning curve.</p>
+                        <div class="ev-decision-tradeoff">
+                            <span class="ev-tradeoff-icon">
+                                <span class="material-symbols-outlined">balance</span>
+                            </span>
+                            <div class="ev-tradeoff-content">
+                                <span class="ev-tradeoff-label">Tradeoff</span>
+                                <p>Some power users had shortcuts they relied on that did not survive consolidation. I documented these for the product team to reintroduce as contextual actions in a later release.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ev-decision-card">
+                    <div class="ev-decision-marker">
+                        <span class="ev-decision-num">02</span>
+                    </div>
+                    <div class="ev-decision-content">
+                        <h3 class="ev-decision-title">Personalized workspaces instead of shared file views</h3>
+                        <p>Rather than showing every user every file, I introduced a <span class="cs-highlight">role-based workspace model</span>. Engineers saw their active projects by default.</p>
+                        <p>This directly addressed the top complaint from interviews. A personalized space was also identified as the <span class="cs-keyword">single most appreciated feature</span> in post-testing feedback.</p>
+                    </div>
+                </div>
+
+                <div class="ev-decision-card">
+                    <div class="ev-decision-marker">
+                        <span class="ev-decision-num">03</span>
+                    </div>
+                    <div class="ev-decision-content">
+                        <h3 class="ev-decision-title">Rebuilt touch targets and simplified list views</h3>
+                        <p>I removed checkboxes from list views entirely, replacing them with a <span class="cs-highlight">cleaner tap-to-select model</span>. Document details were moved under an ellipsis to reduce clutter.</p>
+                        <p>The folder icon was reserved exclusively for folders, eliminating a recurring source of user confusion. All primary actions were enlarged to meet <span class="cs-keyword">minimum touch target sizes</span> for mobile.</p>
+                    </div>
+                </div>
+
+                <div class="ev-decision-card">
+                    <div class="ev-decision-marker">
+                        <span class="ev-decision-num">04</span>
+                    </div>
+                    <div class="ev-decision-content">
+                        <h3 class="ev-decision-title">Quieter visual hierarchy</h3>
+                        <p>The previously dominant hero image was replaced with a more subtle one so the <span class="cs-highlight">actual content could take focus</span>. UI components were standardized to remove visual inconsistency.</p>
+                        <p>Simple directional arrows replaced the complex filtering system for sorting, making the most common action in the app a <span class="cs-keyword">single tap</span>.</p>
+                    </div>
+                </div>
+
+                <div class="ev-decision-card">
+                    <div class="ev-decision-marker">
+                        <span class="ev-decision-num">05</span>
+                    </div>
+                    <div class="ev-decision-content">
+                        <h3 class="ev-decision-title">AI-assisted component exploration</h3>
+                        <p>During the UI phase, I used AI to <span class="cs-highlight">rapidly generate and iterate</span> on component variations, then reviewed and refined the shortlisted options myself.</p>
+                        <p>Given the tight timeline, this let me explore a <span class="cs-keyword">wider range of visual directions</span> than I could have manually, without sacrificing quality in the final decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 06 - Light (Results) -->
+    <section class="cs-section cs-section-light" id="section-06">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">06</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">RESULTS</span>
+            </div>
+
+            <p class="cs-intro-text">These results come from <span class="cs-keyword-light">usability testing sessions</span> conducted with NDT engineers after the redesign.</p>
+
+            <!-- Hero Stat with Ring -->
+            <div class="ev-stats-showcase">
+                <div class="ev-stat-hero">
+                    <div class="ev-stat-ring">
+                        <svg viewBox="0 0 120 120">
+                            <circle class="ev-ring-bg" cx="60" cy="60" r="54"/>
+                            <circle class="ev-ring-fill" cx="60" cy="60" r="54" data-percent="87"/>
+                        </svg>
+                        <div class="ev-stat-value">
+                            <span class="ev-stat-number" data-target="8.7">0</span>
+                            <span class="ev-stat-suffix">/10</span>
+                        </div>
+                    </div>
+                    <p class="ev-stat-label">Average usability rating</p>
+                    <p class="ev-stat-context">Rated by engineers who used both versions</p>
+                </div>
+
+                <!-- Animated Stat Bars -->
+                <div class="ev-stats-grid">
+                    <div class="ev-stat-card">
+                        <div class="ev-stat-header">
+                            <span class="ev-stat-percent">80%</span>
+                        </div>
+                        <div class="ev-stat-bar-container">
+                            <div class="ev-stat-bar" data-width="80"></div>
+                        </div>
+                        <p class="ev-stat-desc">found the earlier design <span class="cs-keyword-light">less user-friendly</span></p>
+                    </div>
+                    <div class="ev-stat-card">
+                        <div class="ev-stat-header">
+                            <span class="ev-stat-percent">90%</span>
+                        </div>
+                        <div class="ev-stat-bar-container">
+                            <div class="ev-stat-bar" data-width="90"></div>
+                        </div>
+                        <p class="ev-stat-desc">preferred the new <span class="cs-keyword-light">personalized workspace</span></p>
+                    </div>
+                    <div class="ev-stat-card">
+                        <div class="ev-stat-header">
+                            <span class="ev-stat-percent">70%</span>
+                        </div>
+                        <div class="ev-stat-bar-container">
+                            <div class="ev-stat-bar" data-width="70"></div>
+                        </div>
+                        <p class="ev-stat-desc">want <span class="cs-keyword-light">more automation</span>: top priority for next phase</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Best Feature Highlight -->
+            <div class="ev-best-feature">
+                <div class="ev-feature-glow"></div>
+                <div class="ev-feature-icon">
+                    <span class="material-symbols-outlined">trophy</span>
+                </div>
+                <div class="ev-feature-content">
+                    <span class="ev-feature-label">Most Appreciated Feature</span>
+                    <h3 class="ev-feature-title">Personalized user space</h3>
+                    <p class="ev-feature-desc">Identified as the single most appreciated feature across all testing sessions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 07 - Dark (Learnings) -->
+    <section class="cs-section cs-section-dark" id="section-07">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">07</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">WHAT I LEARNED</span>
+            </div>
+
+            <!-- Learning Blocks with Animated Markers -->
+            <div class="ev-learnings-container">
+                <div class="ev-learning-block">
+                    <div class="ev-learning-marker">
+                        <span class="ev-learning-dot"></span>
+                        <span class="ev-learning-line"></span>
+                    </div>
+                    <div class="ev-learning-content">
+                        <h3>Physical context as a hard design constraint</h3>
+                        <p>Evident was the project that made me take physical context seriously. I had always understood that mobile design was different from desktop. But <span class="cs-highlight">watching an engineer mis-tap a control repeatedly</span> because they were under time pressure and the screen was hard to see in bright light made that abstract principle <span class="cs-keyword">concrete and urgent</span>.</p>
+                    </div>
+                </div>
+
+                <div class="ev-learning-block">
+                    <div class="ev-learning-marker">
+                        <span class="ev-learning-dot"></span>
+                        <span class="ev-learning-line"></span>
+                    </div>
+                    <div class="ev-learning-content">
+                        <h3>The 70% who wanted more automation</h3>
+                        <p>The 8.7/10 usability rating mattered, but so did the 70% who wanted more automation. That number is not a failure. It is a signal that the redesign <span class="cs-highlight">raised the floor enough</span> that engineers now trusted the app and wanted it to do more for them. That is a <span class="cs-keyword">different and better problem</span> to have than the one we started with.</p>
+                    </div>
+                </div>
+
+                <div class="ev-learning-block">
+                    <div class="ev-learning-marker">
+                        <span class="ev-learning-dot"></span>
+                        <span class="ev-learning-line"></span>
+                    </div>
+                    <div class="ev-learning-content">
+                        <h3>AI tooling as a multiplier</h3>
+                        <p>Working under a 3-month timeline pushed me to use AI tooling more deliberately than I had before. Using it for research synthesis and component exploration <span class="cs-highlight">gave me back hours</span> I could spend on decisions that required human judgment. Knowing when to delegate to a tool and when to think something through yourself is a skill I now treat as <span class="cs-keyword">core to how I work</span>.</p>
+                    </div>
+                </div>
+
+                <div class="ev-learning-block">
+                    <div class="ev-learning-marker">
+                        <span class="ev-learning-dot"></span>
+                    </div>
+                    <div class="ev-learning-content">
+                        <h3>Accepting what would not get done</h3>
+                        <p>The hardest part of the project was accepting what would not get done in three months. The decisions about <span class="cs-highlight">what to prioritize and what to defer</span> were as important as the design decisions themselves.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 08 - Light (Final Design) -->
+    <section class="cs-section cs-section-light" id="section-08">
+        <div class="cs-section-inner">
+            <div class="cs-section-header">
+                <span class="cs-section-num">08</span>
+                <span class="cs-section-divider">/</span>
+                <span class="cs-section-label">BEFORE & AFTER</span>
+            </div>
+
+            <p class="cs-intro-text">The transformation from <span class="cs-keyword-light">legacy interface</span> to <span class="cs-keyword-light">field-ready design</span>.</p>
+
+            <!-- Before/After Comparison -->
+            <div class="ev-before-after">
+                <div class="ev-comparison-container">
+                    <div class="ev-comparison-side ev-before">
+                        <span class="ev-comparison-label">Before</span>
+                        <div class="ev-comparison-image-wrap">
+                            <img src="Screenshot_2025-09-18_at_19.31.23_2-removebg-preview 1.png" alt="Evident Connect Before Redesign" class="ev-comparison-image ev-float-image">
+                        </div>
+                        <div class="ev-comparison-issues">
+                            <span class="material-symbols-outlined">close</span>
+                            <span>Dual hamburger menus</span>
+                        </div>
+                        <div class="ev-comparison-issues">
+                            <span class="material-symbols-outlined">close</span>
+                            <span>Tiny touch targets</span>
+                        </div>
+                        <div class="ev-comparison-issues">
+                            <span class="material-symbols-outlined">close</span>
+                            <span>Cluttered shared workspace</span>
+                        </div>
+                    </div>
+                    <div class="ev-comparison-divider">
+                        <div class="ev-divider-line"></div>
+                        <div class="ev-divider-icon">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                        <div class="ev-divider-line"></div>
+                    </div>
+                    <div class="ev-comparison-side ev-after">
+                        <span class="ev-comparison-label">After</span>
+                        <div class="ev-comparison-image-wrap">
+                            <img src="Assets/Photos/EVDT.svg" alt="Evident Connect After Redesign" class="ev-comparison-image ev-float-image">
+                        </div>
+                        <div class="ev-comparison-wins">
+                            <span class="material-symbols-outlined">check</span>
+                            <span>Unified navigation</span>
+                        </div>
+                        <div class="ev-comparison-wins">
+                            <span class="material-symbols-outlined">check</span>
+                            <span>Field-ready touch targets</span>
+                        </div>
+                        <div class="ev-comparison-wins">
+                            <span class="material-symbols-outlined">check</span>
+                            <span>Personalized workspace</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Highlights -->
+            <h3 class="ev-section-subhead">Key improvements at a glance</h3>
+            <div class="ev-design-highlights">
+                <div class="ev-highlight-item">
+                    <div class="ev-highlight-icon">
+                        <span class="material-symbols-outlined">menu</span>
+                    </div>
+                    <div class="ev-highlight-content">
+                        <h4>Unified Navigation</h4>
+                        <p>Single hamburger menu replacing the confusing dual-menu system</p>
+                    </div>
+                </div>
+                <div class="ev-highlight-item">
+                    <div class="ev-highlight-icon">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <div class="ev-highlight-content">
+                        <h4>Personalized Workspace</h4>
+                        <p>Role-based views showing only relevant projects and files</p>
+                    </div>
+                </div>
+                <div class="ev-highlight-item">
+                    <div class="ev-highlight-icon">
+                        <span class="material-symbols-outlined">touch_app</span>
+                    </div>
+                    <div class="ev-highlight-content">
+                        <h4>Field-Ready Touch Targets</h4>
+                        <p>Enlarged tap zones designed for gloved hands and bright sunlight</p>
+                    </div>
+                </div>
+                <div class="ev-highlight-item">
+                    <div class="ev-highlight-icon">
+                        <span class="material-symbols-outlined">visibility</span>
+                    </div>
+                    <div class="ev-highlight-content">
+                        <h4>Quieter Visual Hierarchy</h4>
+                        <p>Content-first design with standardized, consistent components</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cs-cta-section">
+        <div class="cs-cta-content">
+            <h2 class="cs-cta-title">Like what you see?</h2>
+            <p class="cs-cta-subtitle">Let's build something together.</p>
+            <div class="cs-cta-buttons">
+                <a href="index.html#contact" class="cs-cta-btn cs-cta-primary">Get in touch <span class="material-symbols-outlined">arrow_forward</span></a>
+                <a href="index.html#work" class="cs-cta-btn cs-cta-secondary">View more work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cs-footer">
+        <div class="cs-footer-content">
+            <span class="cs-footer-copyright">© 2025 DENASOHA-NAMIKO</span>
+            <div class="cs-footer-links">
+                <a href="https://www.linkedin.com/in/denasoha-namiko-d-588a13258/">LinkedIn</a>
+                <a href="mailto:dodenasohanamiko@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
 
     <script>
-        // ===== FRAMER-STYLE ANIMATIONS =====
-        
-        // Smooth scroll progress bar
+        // Progress bar
         window.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = (scrollTop / docHeight) * 100;
-            const progressBar = document.getElementById('progressBar');
-            if (progressBar) {
-                progressBar.style.width = scrollPercent + '%';
-            }
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            document.querySelector('.cs-progress-bar').style.width = progress + '%';
         });
 
-        // Main intersection observer for scroll animations
+        // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver((entries) => {
+        const animateOnScroll = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    entry.target.classList.add('in-view');
+                    entry.target.classList.add('is-visible');
                 }
             });
         }, observerOptions);
 
-        // Observe all animatable elements
-        const animatableElements = [
-            '.case-section',
-            '.section-header',
-            '.section-content',
-            '.summary-statement',
-            '.summary-metrics',
-            '.issue-list',
-            '.goals-grid',
-            '.pain-points',
-            '.insights-showcase',
-            '.decisions-list',
-            '.interface-features',
-            '.reflections-grid',
-            '.outcomes-showcase',
-            '.closing-statement',
-            '.case-footer'
-        ];
-        
-        document.querySelectorAll(animatableElements.join(', ')).forEach(el => {
-            observer.observe(el);
+        document.querySelectorAll('.ev-slide, .ev-accordion-item, .ev-decision-card, .ev-stat-card, .ev-learning-block, .ev-insight-card, .ev-quote-card').forEach(el => {
+            animateOnScroll.observe(el);
         });
 
-        // Initialize - trigger animations for elements already in view
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => {
-                const elementsInView = document.querySelectorAll(animatableElements.join(', '));
-                elementsInView.forEach(el => {
-                    const rect = el.getBoundingClientRect();
-                    if (rect.top < window.innerHeight && rect.bottom > 0) {
-                        el.classList.add('in-view');
-                    }
-                });
-            }, 100);
-        });
-    </script>
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-text"></div>
+        // Industry Slider
+        const sliderTrack = document.querySelector('.ev-slider-track');
+        const slides = document.querySelectorAll('.ev-slide');
+        const prevBtn = document.querySelector('.ev-slider-prev');
+        const nextBtn = document.querySelector('.ev-slider-next');
+        const sliderDots = document.querySelectorAll('.ev-slider-dots .ev-slider-dot');
+        let currentSlide = 0;
 
-    <script>
-        // Custom Cursor - Case Study
-        const cursor = document.querySelector('.cursor');
-        const cursorText = document.querySelector('.cursor-text');
-
-        if (cursor && cursorText) {
-            let mouseX = 0;
-            let mouseY = 0;
-            let cursorX = 0;
-            let cursorY = 0;
-
-            document.addEventListener('mousemove', (e) => {
-                mouseX = e.clientX;
-                mouseY = e.clientY;
-            });
-
-            function animateCursor() {
-                const speed = 0.2;
-                cursorX += (mouseX - cursorX) * speed;
-                cursorY += (mouseY - cursorY) * speed;
-
-                cursor.style.left = cursorX + 'px';
-                cursor.style.top = cursorY + 'px';
-                cursorText.style.left = cursorX + 'px';
-                cursorText.style.top = cursorY + 'px';
-
-                requestAnimationFrame(animateCursor);
-            }
-
-            animateCursor();
-
-            document.addEventListener('mouseleave', () => {
-                cursor.style.opacity = '0';
-                cursorText.style.opacity = '0';
-            });
-
-            document.addEventListener('mouseenter', () => {
-                cursor.style.opacity = '1';
-                cursorText.style.opacity = '0';
+        function updateSlider() {
+            const slideWidth = slides[0].offsetWidth + 24;
+            sliderTrack.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+            sliderDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
             });
         }
-    </script>
 
-    <script>
-        // Page exit animation for back links
-        document.querySelectorAll('.case-nav-logo, .footer-link, .cta-link').forEach((link) => {
-            link.addEventListener('click', (event) => {
-                const href = link.getAttribute('href');
-                if (!href || href.startsWith('#')) return;
-                if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                    return;
-                }
-                event.preventDefault();
-                document.body.classList.add('page-exit');
-                setTimeout(() => {
-                    window.location.href = href;
-                }, 520);
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlider();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const maxSlide = window.innerWidth > 900 ? slides.length - 3 : window.innerWidth > 600 ? slides.length - 2 : slides.length - 1;
+            if (currentSlide < maxSlide) {
+                currentSlide++;
+                updateSlider();
+            }
+        });
+
+        sliderDots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                currentSlide = i;
+                updateSlider();
             });
+        });
+
+        // Tabs
+        const tabBtns = document.querySelectorAll('.ev-tab-btn');
+        const tabPanels = document.querySelectorAll('.ev-tab-panel');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.dataset.tab;
+                
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabPanels.forEach(p => p.classList.remove('active'));
+                
+                btn.classList.add('active');
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
+
+        // Accordion
+        const accordionHeaders = document.querySelectorAll('.ev-accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const isOpen = item.classList.contains('open');
+                
+                document.querySelectorAll('.ev-accordion-item').forEach(i => i.classList.remove('open'));
+                
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
+
+        // Quote Carousel
+        const carouselDots = document.querySelectorAll('.ev-carousel-dot');
+        const quoteCards = document.querySelectorAll('.ev-quote-card');
+        const carouselPrev = document.querySelector('.ev-carousel-prev');
+        const carouselNext = document.querySelector('.ev-carousel-next');
+        let currentQuote = 0;
+
+        function showQuote(index) {
+            quoteCards.forEach((card, i) => {
+                card.classList.toggle('active', i === index);
+                carouselDots[i].classList.toggle('active', i === index);
+            });
+        }
+
+        carouselDots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                currentQuote = i;
+                showQuote(currentQuote);
+            });
+        });
+
+        carouselPrev.addEventListener('click', () => {
+            currentQuote = (currentQuote - 1 + quoteCards.length) % quoteCards.length;
+            showQuote(currentQuote);
+        });
+
+        carouselNext.addEventListener('click', () => {
+            currentQuote = (currentQuote + 1) % quoteCards.length;
+            showQuote(currentQuote);
+        });
+
+        // Auto-rotate quotes
+        setInterval(() => {
+            currentQuote = (currentQuote + 1) % quoteCards.length;
+            showQuote(currentQuote);
+        }, 6000);
+
+        // Insight Cards Flip
+        const insightCards = document.querySelectorAll('.ev-insight-card');
+        insightCards.forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('flipped');
+            });
+        });
+
+        // Animate stats on scroll
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('stats-visible');
+                    
+                    // Animate number
+                    const statNumber = entry.target.querySelector('.ev-stat-number');
+                    if (statNumber) {
+                        const target = parseFloat(statNumber.dataset.target);
+                        animateNumber(statNumber, target);
+                    }
+                    
+                    // Animate ring
+                    const ring = entry.target.querySelector('.ev-ring-fill');
+                    if (ring) {
+                        const percent = ring.dataset.percent;
+                        setTimeout(() => {
+                            ring.style.strokeDashoffset = 339.292 - (339.292 * percent / 100);
+                        }, 300);
+                    }
+
+                    // Animate bars
+                    const bars = entry.target.querySelectorAll('.ev-stat-bar');
+                    bars.forEach((bar, index) => {
+                        const width = bar.dataset.width;
+                        setTimeout(() => {
+                            bar.style.width = width + '%';
+                        }, 400 + (index * 150));
+                    });
+
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('.ev-stats-showcase').forEach(el => statsObserver.observe(el));
+
+        function animateNumber(el, target) {
+            const duration = 2000;
+            const start = 0;
+            const startTime = performance.now();
+
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeProgress = 1 - Math.pow(1 - progress, 3);
+                const current = start + (target - start) * easeProgress;
+                el.textContent = current.toFixed(1);
+                
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+            requestAnimationFrame(update);
+        }
+
+        // Hero animations on load
+        window.addEventListener('load', () => {
+            document.querySelector('.cs-hero-content').style.opacity = '0';
+            document.querySelector('.cs-hero-content').style.transform = 'translateY(40px)';
+            
+            setTimeout(() => {
+                document.querySelector('.cs-hero-content').style.transition = 'opacity 1s ease, transform 1s cubic-bezier(0.16, 1, 0.3, 1)';
+                document.querySelector('.cs-hero-content').style.opacity = '1';
+                document.querySelector('.cs-hero-content').style.transform = 'translateY(0)';
+            }, 100);
+            
+            setTimeout(() => {
+                const heroImage = document.querySelector('.cs-hero-image');
+                heroImage.style.opacity = '0';
+                heroImage.style.transform = 'translateY(40px) scale(0.95)';
+                heroImage.style.transition = 'opacity 1s ease 0.2s, transform 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s';
+                heroImage.style.opacity = '1';
+                heroImage.style.transform = 'translateY(0) scale(1)';
+            }, 200);
         });
     </script>
 
-    <!-- FAST DYNAMIC ANIMATIONS -->
-    <script>
-        (function() {
-            'use strict';
-            
-            // ========================================
-            // VARIED ANIMATION ASSIGNMENT
-            // ========================================
-            function assignAnimations() {
-                const imageReveals = ['reveal-image', 'reveal-image-left', 'reveal-image-right', 'reveal-image-center', 'reveal-image-diagonal', 'reveal-image-circle'];
-                document.querySelectorAll('.case-image, .case-section img:not(.card-icon):not(.column-icon)').forEach((img, i) => {
-                    if (!img.closest('.browser-mockup') && !img.closest('.phone-mockup')) {
-                        img.classList.add(imageReveals[i % imageReveals.length]);
-                    }
-                });
-                
-                const mockupReveals = ['reveal-up', 'reveal-scale', 'reveal-flip-x'];
-                document.querySelectorAll('.browser-mockup, .mockup-container').forEach((el, i) => {
-                    el.classList.add(mockupReveals[i % mockupReveals.length]);
-                });
-
-                document.querySelectorAll('.card-icon, .column-icon').forEach((el) => {
-                    el.classList.add('reveal-rotate');
-                });
-
-                const textNodes = document.querySelectorAll('.case-section h3, .case-section h4, .case-section p, .section-content > p');
-                textNodes.forEach((el, i) => {
-                    if (![...el.classList].some((c) => c.startsWith('reveal-'))) {
-                        el.classList.add('reveal-up');
-                        el.style.transitionDelay = `${i * 10}ms`;
-                    }
-                });
-
-                document.querySelectorAll('.case-section ul, .case-section ol').forEach((list) => {
-                    list.classList.add('stagger-children');
-                });
-            }
-            
-            // ========================================
-            // FAST OBSERVER
-            // ========================================
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) entry.target.classList.add('visible');
-                });
-            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
-            const selectors = [
-                '.section-header', '.summary-card', '.responsibility-card', 
-                '.problem-column', '.problem-header', '.responsibilities-header',
-                '.column-pills', '.case-image', '.browser-mockup', '.mockup-container',
-                '.card-icon', '.column-icon',
-                '.reveal-up', '.reveal-down', '.reveal-left', '.reveal-right',
-                '.reveal-scale', '.reveal-pop', '.reveal-rotate', 
-                '.reveal-flip-x', '.reveal-flip-y', '.reveal-zoom-out', '.reveal-skew',
-                '.reveal-image', '.reveal-image-left', '.reveal-image-right',
-                '.reveal-image-center', '.reveal-image-diagonal', '.reveal-image-circle',
-                '.stagger-children', '[data-reveal]'
-            ];
-
-            assignAnimations();
-            document.querySelectorAll(selectors.join(', ')).forEach(el => observer.observe(el));
-
-            const images = document.querySelectorAll('.case-section img');
-            images.forEach((img) => {
-                const show = () => img.classList.add('visible');
-                if (img.complete) {
-                    show();
-                } else {
-                    img.addEventListener('load', show, { once: true });
-                    img.addEventListener('error', show, { once: true });
-                }
-            });
-            
-            // ========================================
-            // FAST STAGGER
-            // ========================================
-            document.querySelectorAll('.stagger-children').forEach(parent => {
-                const obs = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                            Array.from(entry.target.children).forEach((child, i) => {
-                                child.style.transitionDelay = `${i * 15}ms`;
-                                child.classList.add('visible');
-                            });
-                        }
-                    });
-                }, { threshold: 0.1 });
-                obs.observe(parent);
-            });
-
-            document.querySelectorAll('.summary-cards-grid .summary-card').forEach((card, i) => {
-                card.style.transitionDelay = `${i * 15}ms`;
-            });
-            document.querySelectorAll('.responsibilities-grid .responsibility-card').forEach((card, i) => {
-                card.style.transitionDelay = `${i * 15}ms`;
-            });
-            document.querySelectorAll('.problem-columns .problem-column').forEach((col, i) => {
-                col.style.transitionDelay = `${i * 15}ms`;
-            });
-            document.querySelectorAll('.column-pills .pill').forEach((pill, i) => {
-                pill.style.transitionDelay = `${i * 10}ms`;
-            });
-            
-            // ========================================
-            // 3D CARD TILT
-            // ========================================
-            document.querySelectorAll('.summary-card, .responsibility-card').forEach(card => {
-                card.addEventListener('mousemove', (e) => {
-                    const rect = card.getBoundingClientRect();
-                    const x = (e.clientX - rect.left - rect.width / 2) / 20;
-                    const y = (e.clientY - rect.top - rect.height / 2) / 20;
-                    card.style.transform = `perspective(1000px) rotateX(${-y}deg) rotateY(${x}deg) scale(1.02)`;
-                });
-                card.addEventListener('mouseleave', () => {
-                    card.style.transform = '';
-                });
-            });
-            
-            // ========================================
-            // INIT
-            // ========================================
-            window.addEventListener('load', () => {
-                document.querySelectorAll(selectors.join(', ')).forEach(el => {
-                    const rect = el.getBoundingClientRect();
-                    if (rect.top < window.innerHeight) el.classList.add('visible');
-                });
-            });
-        })();
-    </script>
 </body>
 </html>

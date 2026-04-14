@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     background: var(--cs-light-bg);
     color: var(--cs-light-text);
     line-height: 1.6;
@@ -1440,6 +1440,31 @@ body {
 
 .cs-footer-links a:hover {
     opacity: 0.6;
+}
+
+.cs-footer-text {
+    font-size: 14px;
+    color: var(--cs-muted-light);
+    margin: 0;
+}
+
+.cs-footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--cs-dark-text);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.cs-footer-link:hover {
+    color: var(--cs-accent);
+    transform: translateX(-4px);
+}
+
+.cs-footer-link .material-symbols-outlined {
+    font-size: 18px;
 }
 
 /* ===================================
