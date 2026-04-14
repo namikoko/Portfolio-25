@@ -1138,5 +1138,39 @@
         max-width: 400px;
         gap: 1.5rem;
     }
+
+    .fs-behavior-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fs-ownership-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fs-failures-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fs-themes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fs-pillars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fs-decisions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fs-results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .fs-results-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
