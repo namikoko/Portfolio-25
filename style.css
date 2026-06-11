@@ -1508,13 +1508,16 @@ img {
     }
 
     .project-image {
-        padding: 24px;
+        aspect-ratio: unset;
+        min-height: 280px;
+        padding: 20px;
     }
 
     .project-image img {
-        width: 100%;
+        width: auto;
+        max-width: 100%;
         height: auto;
-        max-height: 200px;
+        max-height: 240px;
         object-fit: contain;
     }
 
@@ -1562,11 +1565,12 @@ img {
     }
 
     .project-image {
+        min-height: 240px;
         padding: 16px;
     }
 
     .project-image img {
-        max-height: 160px;
+        max-height: 200px;
     }
 
     .mac-window {
