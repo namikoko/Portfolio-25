@@ -1509,15 +1509,13 @@ img {
 
     .project-image {
         aspect-ratio: unset;
-        min-height: 280px;
-        padding: 20px;
+        height: 280px;
+        padding: 12px;
     }
 
     .project-image img {
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        max-height: 240px;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
     }
 
@@ -1565,12 +1563,14 @@ img {
     }
 
     .project-image {
-        min-height: 240px;
-        padding: 16px;
+        height: 260px;
+        padding: 10px;
     }
 
     .project-image img {
-        max-height: 200px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .mac-window {
